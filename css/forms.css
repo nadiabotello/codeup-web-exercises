@@ -1,0 +1,65 @@
+body {
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+h2 {
+    letter-spacing: 0px;
+    text-decoration: underline;
+}
+
+#username {
+    position: relative;
+    left: 0px;
+    width: 300px;
+    padding: 10px;
+}
+
+#password {
+    position: relative;
+    left: 0px;
+    width: 300px;
+    padding: 10px;
+}
+
+input[type=text]:focus {
+    background-color: lightblue;
+}
+
+input[type=password]:focus {
+    background-color: lightblue;
+}
+
+textarea {
+    width: 50%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    resize: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+select {
+    width: 20%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type=submit], input[type=button] {
+    background-color: #26A7FF;
+    border: none;
+    width: 50%
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
