@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Extra Property Search Exercise</title>
+</head>
+<body>
+<h1>Property Search</h1>
+<form method="GET" action="https://request-inspector.glitch.me/">
+
+    <label for="property_type">Property Type</label>
+    <select name="property_type">
+        <option value="lot">Lot</option>
+        <option value="apt">Apartment</option>
+        <option value="house">House</option>
+    </select>
+    <br>
+    <br>
+
+    <label for="price_range">Prince Range</label>
+    $0<input type="range" name="review" id="price_range" min="0" max="1000000">$1,000,000
+    <br>
+    <br>
+
+    <label for="sq_ft">Square Footage</label>
+    <input id="sq_ft" name="sq_ft" type="text">
+    <br>
+    <br>
+
+    Number of Bedrooms <select name="num_bed">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+    <br>
+    <br>
+
+    Number of Bathrooms <select name="num_bath">
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    </select>
+    <br>
+    <br>
+
+    <label for="zipcode">Zipcode</label>
+    <input id="zipcode" name="zipcode" type="text">
+    <br>
+    <br>
+
+    <label for="schooldistrict">School District</label>
+    <input id="schooldistrict" name="schooldistrict" type="text">
+    <br>
+    <br>
+    <br><button type="submit">Search Now</button>
+</form>
+</body>
+</html>

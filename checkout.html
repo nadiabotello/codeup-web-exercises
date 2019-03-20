@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Extra Checkout Exercise</title>
+</head>
+<body>
+<h1>Credit Card Checkout</h1>
+<form method="POST" action="https://request-inspector.glitch.me/">
+
+    <label for="cardnumber">Credit Card Number</label>
+    <input id="cardnumber" name="cardnumber" type="password" placeholder="Enter credit card number" required>
+    <br>
+
+    <label for="exp">Expiration Date</label>
+    <input id="exp" name="exp" type="text" placeholder="(MO/YR)" required>
+    <br>
+
+    <label for="sec">Security Code</label>
+    <input id="sec" name="sec" type="password" placeholder="Enter security code" required>
+    <br>
+    <br>
+    <label for="address_street">Street Address</label>
+    <input id="address_street" name="address_street" type="text" placeholder="Enter street address" required>
+    <br>
+
+    <label for="address_city">City</label>
+    <input id="address_city" name="address_city" type="text" placeholder="Enter city" required>
+    <br>
+
+    <select name="address_state">
+        <option value="TX">TX</option>
+        <option value="CA">CA</option>
+        <option value="Other">Other</option>
+    </select>
+
+    <label for="address_zip">Zip Code</label>
+    <input id="address_zip" name="address_zip" type="text" placeholder="Enter zip code" required>
+    <br>
+
+    <br>
+    <input name="keep_on_file" value="true" type="checkbox" checked>Keep this credit card on file for future transactions
+    <br>
+    <br>
+    <button type="submit">Buy Now!</button>
+</form>
+</body>
+</html>
