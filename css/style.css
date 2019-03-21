@@ -1,6 +1,122 @@
 
 
 .fancy-header {
-    color: purple;
+    color: #91d1bf;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2em;
+}
+
+h2 {
+    color: #76C6DE;
     text-decoration: underline;
+}
+
+body{
+    background-color: #105170;
+    /*background-image: url(../img/Multicolor-plain-HD-wallpapers.jpg);*/
+    /*background-size: contain;*/
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+ul{
+    border:1px solid #000;
+    padding:20px;
+    background-color: #76C6DE;
+}
+
+ol{
+    border:1px solid #000;
+    padding:20px;
+    background-color: #76C6DE;
+}
+
+li{
+    list-style: none;
+}
+
+td,
+th {
+    border: 1px solid rgb(190, 190, 190);
+    padding: 10px;
+}
+
+td {
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+th[scope="col"] {
+    background-color: #696969;
+    color: #fff;
+}
+
+th[scope="row"] {
+    background-color: #d7d9f2;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(200, 200, 200);
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-size: .8rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* unvisited link (:link) */
+a:link {
+    color:mediumaquamarine;
+}
+
+/* visited link (:visited) */
+a:visited {
+    color:black;
+}
+
+/* mouse hover over link (:hover) */
+a:hover {
+    color:blue;
+}
+
+/* active/selected link (:active) */
+a:active {
+    color:green;
+}
+
+/*#mottosection{*/
+    /*background-color: #76C6DE;*/
+    /*padding:20px;*/
+    /*border: 2px #444444 ;*/
+/*}*/
+
+.responsive {
+    max-width: 25%;
+    height: auto;
+}
+
+#mottosection {
+    border: 0.5rem outset skyblue;
+    outline: 0.5rem solid #76C6DE;
+    box-shadow: 0 0 0 2rem #91d1bf;
+    border-radius: 12px;
+    margin: 2rem;
+    padding: 1px 2px 3px 4px;
+    outline-offset: 0.5rem;
+    color: white;
+    font-size: 24px;
+}
+
+.block{
+    display: inline-block;
 }
