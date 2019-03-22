@@ -63,7 +63,7 @@ fieldset {
     padding: 8px;
     color: white;
     font-weight: bold;
-    border: 1px;
+    border: 1px solid;
     border-color: lightgrey;
     /* There must be a separation of 8px between the text and the border of this element */
     /* The text color of this element should be white and bold */
