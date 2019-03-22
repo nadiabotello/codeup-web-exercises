@@ -145,6 +145,37 @@ a:active {
     justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
 }
 
+/*.pure-form{*/
+    /**/
+/*}*/
+
+form {
+    margin: 2em;
+    padding: 1em;
+    width: 25%;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.pure-form {
+    padding: 1em;
+    border: 0px;
+    background-color: lightgrey;
+}
+
+.pure-control-group{
+    padding: 4px;
+    margin: 4px;
+}
+
+.pure-checkbox{
+    font-size: 12px;
+}
+
+.pure-button{
+    margin: 0 auto;
+}
+
 /*input[type=text], input[type=email], select {*/
     /*width: 50%;*/
     /*padding: 10px 20px;*/
