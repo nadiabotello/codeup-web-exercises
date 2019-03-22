@@ -1,5 +1,4 @@
 
-
 .fancy-header {
     color: #91d1bf;
     text-decoration: none;
@@ -12,7 +11,7 @@ h2 {
     text-decoration: underline;
 }
 
-body{
+body {
     background-color: #105170;
     /*background-image: url(../img/Multicolor-plain-HD-wallpapers.jpg);*/
     /*background-size: contain;*/
@@ -20,19 +19,19 @@ body{
     text-align: center;
 }
 
-ul{
-    border:1px solid #000;
-    padding:20px;
+ul {
+    border: 1px solid #000;
+    padding: 20px;
     background-color: #76C6DE;
 }
 
-ol{
-    border:1px solid #000;
-    padding:20px;
+ol {
+    border: 1px solid #000;
+    padding: 20px;
     background-color: #76C6DE;
 }
 
-li{
+li {
     list-style: none;
 }
 
@@ -76,32 +75,32 @@ table {
 
 /* unvisited link (:link) */
 a:link {
-    color:mediumaquamarine;
+    color: mediumaquamarine;
 }
 
 /* visited link (:visited) */
 a:visited {
-    color:black;
+    color: black;
 }
 
 /* mouse hover over link (:hover) */
 a:hover {
-    color:blue;
+    color: blue;
 }
 
 /* active/selected link (:active) */
 a:active {
-    color:green;
+    color: green;
 }
 
 /*#mottosection{*/
-    /*background-color: #76C6DE;*/
-    /*padding:20px;*/
-    /*border: 2px #444444 ;*/
+/*background-color: #76C6DE;*/
+/*padding:20px;*/
+/*border: 2px #444444 ;*/
 /*}*/
 
 .responsive {
-    max-width: 25%;
+    max-width: 30%;
     height: auto;
 }
 
@@ -117,6 +116,17 @@ a:active {
     font-size: 24px;
 }
 
-.block{
-    display: inline-block;
+.block {
+    display: flex;
+    height: 200px; /* Or whatever */
+}
+
+.container {
+    width: 350px;  /* Or whatever */
+    height: 350px; /* Or whatever */
+    margin: auto;  /* Magic! */
+}
+
+.container {
+    justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
 }
