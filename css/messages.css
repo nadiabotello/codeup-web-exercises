@@ -6,6 +6,14 @@ body, html {
     font-family: Arial, Ubuntu, sans-serif;
 }
 
+
+:root {
+  --bg-info: lightblue;
+  --text-info: #6666ff;
+  --bg-success: lightgreen;
+  --text-success: green;
+}
+
 .message{
     border: 1px solid lightgrey;
     padding: 10px;
@@ -15,13 +23,17 @@ body, html {
 }
 
 .message-info{
-    background-color: lightblue;
-    color: #6666ff;
+    /*background-color: lightblue;*/
+    /*color: #6666ff;*/
+    background-color: var(--bg-info);
+    color: var(--text-info);
 }
 
 .message-success{
-    background-color: lightgreen;
-    color: green;
+    /*background-color: lightgreen;*/
+    /*color: green;*/
+    background-color: var(--bg-success);
+    color: var(--text-success);
 }
 
 .message-warning{
@@ -35,4 +47,3 @@ body, html {
 }
 
 
-/*bg-info, text-info, bg-success, text-success, etc*/
