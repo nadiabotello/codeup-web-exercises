@@ -123,11 +123,12 @@ a:active {
     outline: 0.5rem solid #76C6DE;
     box-shadow: 0 0 0 2rem #91d1bf;
     border-radius: 12px;
-    margin: 2rem;
     padding: 1px 2px 3px 4px;
     outline-offset: 0.5rem;
     color: white;
     font-size: 24px;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .block {
@@ -150,7 +151,6 @@ a:active {
 /*}*/
 
 form {
-    margin: 2em;
     padding: 1em;
     width: 25%;
     margin: 0 auto;
@@ -175,34 +175,3 @@ form {
 .pure-button{
     margin: 0 auto;
 }
-
-/*input[type=text], input[type=email], select {*/
-    /*width: 50%;*/
-    /*padding: 10px 20px;*/
-    /*margin: 6px 0;*/
-    /*display: inline-block;*/
-    /*border: 1px solid #ccc;*/
-    /*border-radius: 1px;*/
-    /*box-sizing: border-box;*/
-/*}*/
-
-/*input[type=submit] {*/
-    /*width: 50%;*/
-    /*background-color: #4CAF50;*/
-    /*color: white;*/
-    /*padding: 14px 20px;*/
-    /*margin: 8px 0;*/
-    /*border: none;*/
-    /*border-radius: 0px;*/
-    /*cursor: pointer;*/
-/*}*/
-
-/*input[type=submit]:hover {*/
-    /*background-color: #45a049;*/
-/*}*/
-
-/*#submit {*/
-    /*border-radius: 5px;*/
-    /*background-color: #f2f2f2;*/
-    /*padding: 20px;*/
-/*}*/
