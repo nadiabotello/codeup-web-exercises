@@ -85,7 +85,7 @@ a {
     margin-right: .5em;
     margin-top: 0px;
     margin-bottom: 0px;
-    width: calc(50% - 5px);
+    width: calc(50% - 1px);
 }
 
 .who-to-follow{
