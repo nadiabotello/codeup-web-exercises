@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Add a background color to the top navigation */
+.topnav {
+    background-color: tomato;
+    overflow: hidden;
+    box-shadow: 3px 3px #888888;
+    height: 40px;
+    width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: white;
+    color: grey;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: white;
+    color: black;
+}
+}
+
+.box1{
+    background-color: tomato;
+    color: white;
+    padding: 2em;
+    margin-bottom: 0px;
+}
+
+header {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    text-align: center;
+}
+
+#start{
+    font-size: 2em;
+    margin: 20px;
+}
+
+#template{
+    margin: 20px;
+}
+
+button{
+    margin-bottom: 20px;
+}
+
+main {
+    font-family: Lato, sans-serif;
+    /*width: 1000px;*/
+}
+
+p {
+    font-size: 14px;
+}
+
+#logo{
+    height: 100px;
+    width: 100px;
+}
+
+.box2{
+    /*float: left;*/
+    padding: 20px;
+    /*margin: 2em;*/
+    background-color: white;
+    text-align: center;
+}
+
+.box3{
+    /*margin: 2em;*/
+    padding: 20px;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+.box4{
+    background-color: darkgrey;
+    padding: 3em;
+    color: white;
+    text-align: center;
+}
+
+#socialbar{
+    height: 50px;
+    width: 100px;
+}
+
+footer {
+    padding: 2em;
+    text-align: center;
+}
