@@ -1,12 +1,12 @@
-*{
-    padding: 0;
-    margin: 0;
-}
+/**{*/
+    /*padding: 0;*/
+    /*margin: 0;*/
+/*}*/
 
 
 .navbar{
     background-color: whitesmoke;
-    container: full-width;
+    width: 100%;
 }
 
 .navbar-nav>.active>a{
@@ -15,6 +15,10 @@
 
 .jumbotron{
     background-image: url(../img/pizza.png);
+}
+
+.jumbotron h1{
+    margin: 0;
 }
 
 hr{
@@ -33,12 +37,14 @@ h1{
     color: white;
 }
 
+.nested {
+    margin: 2%;
+}
+
 .text-right{
     background-color: whitesmoke;
     padding: .5rem;
-    /*border-bottom: 1px solid lightgrey;*/
-    /*border-right: 1px solid lightgrey;*/
-    /*border-left: 1px solid lightgrey;*/
+    border-top: 1px solid lightgrey;
 }
 
 .radio{
@@ -46,12 +52,24 @@ h1{
     padding: .5rem;
 }
 
-checkbox {
-    padding: .5rem;
-    margin-left: 2%;
-    outline: 1px solid lightgrey;
-}
-
 #button-right3, #button-right4{
     display: inline-block;
+}
+
+
+.cc-img {
+    margin: 0 auto;
+}
+
+
+.footer-container{
+    border: 2px solid dodgerblue;
+}
+
+.float-left, .float-right{
+    margin: 2%;
+}
+
+.container{
+    width: 100%;
 }

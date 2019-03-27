@@ -1,51 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Order Pizza Form</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <link rel="stylesheet" type = "text/css" href="css/order-pizza.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/order-pizza.css"/>
 </head>
 <body>
 <!-- Main page content -->
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
 <!-- Your custom JS goes here -->
 
 <div class="container-fluid">
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Pizza World</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Pizza world</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="d-flex align-content-start flex-wrap">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Order online <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Menu</a>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Zip code" aria-label="Search">
-            <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search stores near you!</button>
-        </form>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Order online<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Menu</a>
+                </li>
+            </ul>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Zip code" aria-label="Zip code">
+                <button class="btn btn-outline-secondary" type="submit">Search stores near you!</button>
+            </form>
+            <form class="form-inline ml-auto">
+                <button class="btn text-muted my-2 my-sm-0" type="submit"><i class="fa fa-user mx-1"></i>Sign up
+                </button>
+            </form>
         </div>
-        <div class="text-right">
-        <ul class="nav navbar-nav">
-            <li><a href="#">Sign Up</a></li>
-        </ul>
-        </div>
-    </div>
-</nav>
+    </nav>
+
 
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
@@ -71,7 +77,7 @@
         <div class="card-header" id="card-header2">
             Choose size and crust
         </div>
-
+        <div class="card nested">
             <div class="card-header">
                 Hand Tossed
             </div>
@@ -84,19 +90,22 @@
                     <label><input type="radio" name="optradio"> Medium (12")</label>
                 </div>
             </div>
+        </div>
 
-                <div class="card-header">
-                    Crispy Thin
-                </div>
+        <div class="card nested">
+            <div class="card-header">
+                Crispy Thin
+            </div>
             <div class="card-body">
                 <p class="card-text">Thin enough for optimum crispy to crunchy ratio.</p>
                 <div class="radio">
-                    <label><input type="radio" name="optradio" checked> Small (10")</label>
+                    <label><input type="radio" name="optradio" checked> Medium (12")</label>
                 </div>
                 <div class="radio">
-                    <label><input type="radio" name="optradio"> Medium (12")</label>
+                    <label><input type="radio" name="optradio"> Large (14")</label>
                 </div>
             </div>
+        </div>
         <div class="text-right" id="button-right1">
             <button type="button" class="btn btn-primary btn-sm">Next step ></button>
         </div>
@@ -105,33 +114,37 @@
     <br>
     <div class="card">
         <div class="card-header" id="card-header3">
-            Choose cheese and sauce
+            Choose Cheese and Sauce
         </div>
 
-        <div class="card-header">
-            Cheese
-        </div>
-        <div class="card-body">
-            <p class="card-text">How much?</p>
-            <select class="custom-select">
-                <option selected>Light</option>
-                <option value="1">Normal</option>
-                <option value="2">Extra</option>
-                <option value="3">Double</option>
-            </select>
+        <div class="card nested">
+            <div class="card-header">
+                Cheese
+            </div>
+            <div class="card-body">
+                <p class="card-text">How much?</p>
+                <select class="custom-select">
+                    <option selected>Light</option>
+                    <option value="1">Normal</option>
+                    <option value="2">Extra</option>
+                    <option value="3">Double</option>
+                </select>
+            </div>
         </div>
 
-        <div class="card-header">
-            Sauce
-        </div>
-        <div class="card-body">
-            <p class="card-text">What type?</p>
-            <select class="custom-select">
-                <option selected>Tomato sauce</option>
-                <option value="1">Marina sauce</option>
-                <option value="2">BBQ sauce</option>
-                <option value="3">Alfredo sauce</option>
-            </select>
+        <div class="card nested">
+            <div class="card-header">
+                Sauce
+            </div>
+            <div class="card-body">
+                <p class="card-text">What type?</p>
+                <select class="custom-select">
+                    <option selected>Tomato sauce</option>
+                    <option value="1">Marina sauce</option>
+                    <option value="2">BBQ sauce</option>
+                    <option value="3">Alfredo sauce</option>
+                </select>
+            </div>
         </div>
         <div class="text-right" id="button-right3">
             <button type="button" class="btn btn-primary btn-sm">< Previous Step</button>
@@ -144,61 +157,201 @@
         <div class="card-header" id="card-header1">
             Choose toppings
         </div>
-
-        <div class="card-header">
-            Choose meats
-        </div>
         <div class="card-body">
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">Beef</label>
-            </div>
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck2">
-                <label class="custom-control-label" for="customCheck1">Ham</label>
-            </div>
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck3">
-                <label class="custom-control-label" for="customCheck1">Philly Steak</label>
-            </div>
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck4">
-                <label class="custom-control-label" for="customCheck1">Bacon</label>
-            </div>
-        </div>
 
-        <div class="card-header">
-            Choose Non-Meats
-        </div>
-        <div class="card-body">
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck5">
-                <label class="custom-control-label" for="customCheck1">Green Peppers</label>
+            <div class="card mb-3">
+                <div class="card-header">
+                    Choose Meats
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="Toppings" id="ToppingBeef"
+                                   value="ToppingBeef">
+                            <label class="form-check-label" for="ToppingBeef">
+                                Beef
+                            </label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="Toppings" id="ToppingHam"
+                                   value="ToppingHam">
+                            <label class="form-check-label" for="ToppingHam">
+                                Ham
+                            </label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="Toppings" id="ToppingPS"
+                                   value="ToppingPS">
+                            <label class="form-check-label" for="ToppingPS">
+                                Philly Steak
+                            </label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="Toppings" id="ToppingBacon"
+                                   value="ToppingBacon">
+                            <label class="form-check-label" for="ToppingBacon">
+                                Bacon
+                            </label>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck6">
-                <label class="custom-control-label" for="customCheck1">Mushrooms</label>
-            </div>
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck7">
-                <label class="custom-control-label" for="customCheck1">Onions</label>
-            </div>
-            <div class="custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck8">
-                <label class="custom-control-label" for="customCheck1">Jalapeño Peppers</label>
+
+            <div class="card mb-3">
+                <div class="card-header">
+                    Choose Non-Meats
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="Toppings" id="ToppingGP"
+                                   value="ToppingGP">
+                            <label class="form-check-label" for="ToppingGP">
+                                Green Peppers
+                            </label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="Toppings" id="ToppingMush"
+                                   value="ToppingMush">
+                            <label class="form-check-label" for="ToppingMush">
+                                Mushrooms
+                            </label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="Toppings" id="ToppingOnions"
+                                   value="ToppingOnions">
+                            <label class="form-check-label" for="ToppingOnions">
+                                Onions
+                            </label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="Toppings" id="ToppingJP"
+                                   value="ToppingJP">
+                            <label class="form-check-label" for="ToppingJP">
+                                Jalapeno Peppers
+                            </label>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="text-right" id="button-right">
             <button type="button" class="btn btn-primary btn-sm">
-                <span class="glyphicon glyphicon-shopping-cart"></span>
                 Checkout
             </button>
         </div>
     </div>
+    <br>
+    <br>
 
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-4 col-md-offset-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="row">
+                            <h3 class="text-center">Payment Details</h3>
+                            <img class="img-responsive cc-img"
+                                 src="http://prepbootstrap.com/Content/images/shared/misc/creditcardicons.png">
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <label>CARD NUMBER</label>
+                                        <div class="input-group">
+                                            <input type="tel" class="form-control" placeholder="Valid Card Number"/>
+                                            <span class="input-group-addon"><span
+                                                    class="fa fa-credit-card"></span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-7 col-md-7">
+                                    <div class="form-group">
+                                        <label><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span>
+                                            DATE</label>
+                                        <input type="tel" class="form-control" placeholder="MM / YY"/>
+                                    </div>
+                                </div>
+                                <div class="col-xs-5 col-md-5 pull-right">
+                                    <div class="form-group">
+                                        <label>CV CODE</label>
+                                        <input type="tel" class="form-control" placeholder="CVC"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <label>CARD OWNER</label>
+                                        <input type="text" class="form-control" placeholder="Card Owner Names"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="panel-footer">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <button class="btn btn-warning btn-lg btn-block">Process payment</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div style="width:100%;height:100%;padding-bottom:5%;position:relative;">
+    <iframe src="https://giphy.com/embed/3osxYoufeOGOA7xiX6" width="100%" height="100%" style="position:absolute"
+            frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+</div>
+<!--<img src="https://gph.is/230Xg54" class="rounded float-right" alt="pizza gif" />-->
+<br>
+<br>
+<br>
+
+<footer>
+    <div class="footer-container">
+        <div class="float-left">
+            <address>
+                <strong>Pizza World</strong><br>
+                122 Nogalitos St<br>
+                San Antonio, TX 78204<br>
+                <abbr title="Phone">P:</abbr> +1-210-616-2198
+            </address>
+        </div>
+
+        <div class="float-right">
+            <strong>Hours:</strong><br>
+            Tuesday - Thursday: 11am-9:30pm<br>
+            Friday: 11am-10pm<br>
+            Saturday: 12pm-10pm<br>
+            Closed: Sunday and Monday<br>
+        </div>
+    </div>
     <br>
     <br>
-    <br>
+</footer>
 </div>
 </body>
 </html>
