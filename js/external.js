@@ -74,3 +74,7 @@ alert("You made $" +totalweek + " this week.");
 
 
 
+
+
+
+
