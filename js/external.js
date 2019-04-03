@@ -16,7 +16,7 @@ alert("Great, " + userInput + " is my favorite color, too!");
 
 // 3.
 
-// word problem #1
+// word problems with numerical user input from prior lesson exercises
 
 var littlemermaid = prompt ("How many days have you rented Little Mermaid?");
 Number("littlemermaid");
