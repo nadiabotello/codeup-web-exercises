@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.navbar{
+    background-color: whitesmoke;
+    width: 100%;
+}
+
+.navbar-nav>.active>a{
+    background-color: lightgrey;
+}
+
+.jumbotron{
+    background-image: url(../img/pizza.png);
+}
+
+.jumbotron h1{
+    margin: 0;
+}
+
+hr{
+    color: lightgrey;
+}
+
+h1{
+    text-align: center;
+    background-color: white;
+    opacity: 0.6;
+    width: 100%;
+}
+
+#card-header2, #card-header3, #card-header1{
+    background-color: dodgerblue;
+    color: white;
+}
+
+.nested {
+    margin: 2%;
+}
+
+.text-right{
+    background-color: whitesmoke;
+    padding: .5rem;
+    border-top: 1px solid lightgrey;
+}
+
+.radio{
+    border: 1px solid lightgrey;
+    padding: .5rem;
+}
+
+#button-right3, #button-right4{
+    display: inline-block;
+}
+
+
+.cc-img {
+    margin: 0 auto;
+}
+
+
+.footer-container{
+    border: 2px solid dodgerblue;
+}
+
+.float-left, .float-right{
+    margin: 2%;
+}
+
+.container{
+    width: 100%;
+}
