@@ -35,7 +35,6 @@ do {
 
     else if (allCones - randomNum < 0) {
         console.log("Cannot sell you " + randomNum + " cones because I only have " + allCones);
-        break;
     }
 
 } while (allCones > 0);
