@@ -1,10 +1,11 @@
 "use strict";
 
-var i = 1;
-
-while (i <= 65536){
-    console.log(i *= 2);
-}
+// var i = 2;
+//
+// while (i <= 65536){
+//     console.log(i);
+//     i *= 2;
+// }
 
 // An ice cream seller can't go home until she sells all of her cones.
 // Write a JS program that generates a random number between 50 and 100 representing the amount of cones to sell.
@@ -28,13 +29,14 @@ var allCones = Math.floor(Math.random() * 50) + 50;
 var randomNum = Math.floor(Math.random() * 5) + 1;
 
 do {
-    if (allCones - randomNum < 0) {
-        console.log("Cannot sell " + randomNum);
-        continue;
-    }
     if (allCones -= randomNum) {
-        console.log(randomNum + " cones sold");
+        console.log(randomNum + " cones sold...");
+    }
+
+    else if (allCones - randomNum < 0) {
+        console.log("Cannot sell you " + randomNum + " cones because I only have " + allCones);
+        break;
     }
 
 } while (allCones > 0);
-console.log("No more cones");
+console.log("All gone");
