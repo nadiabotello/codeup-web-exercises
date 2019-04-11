@@ -11,6 +11,7 @@
      * console.log planetsArray to check your work
      */
 
+    console.log(planetsString);
 
     var planetsArray = planetsString.split('|');
 
@@ -31,9 +32,19 @@
 
 
 
-    var planetsReString = planetsArray.join('<br> ');
+    // var planetsReString = planetsArray.join('<br> ');
+    //
+    // console.log(planetsReString);
 
-    console.log(planetsReString);
+
+
+
+    // BONUS EXERCISE
+
+
+    var planetsList = "<ul><li>" + planetsArray.join("</li><li>") + "</li></ul>";
+
+    console.log(planetsList);
 
 
 })();
