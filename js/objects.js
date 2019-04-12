@@ -208,6 +208,15 @@
     });
 
 
+    // books.forEach(function(book, index) {
+    //     var output = "";
+    //     output += "Book # " + (index +1);
+    //     output += "Title: " + book.title + "\n";
+    //     output += "Author is: " + book.author.firstName + " " + book.author.lastName + "\n";
+    //     output += "---";
+    //     console.log(output);
+    // });
+
 
 
 
@@ -221,6 +230,7 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+
 
 
 
