@@ -12,14 +12,11 @@
      *  > console.log(person.lastName) // "Sanchez"
      */
 
-    var person = [
-
+    var person =
         {
         firstName: "Nadia",
         lastName: "Botello"
-        }
-
-    ]
+        };
 
     console.log(person.firstName);
     console.log(person.lastName);
@@ -36,14 +33,12 @@
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
 
-    function sayHello() {
-        return "Hello from "
-    }
 
+    person.hello = function() {
+        alert("Hello from " + person.firstName + " " + person.lastName);
+    };
 
-
-    console.log(person.sayHello());
-
+    person.hello();
 
 
 
@@ -61,11 +56,20 @@
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+    var shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
+
+
+
+
+
+
+
+
+
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -80,6 +84,49 @@
      * > console.log(books[0].author.lastName) // "Adams"
      */
 
+    var books =
+        [
+            {
+            title: "Figuring",
+            author:{
+                firstName: "Maria",
+                lastName: "Popova"
+                }
+            },
+            {
+            title: "Weapons of Math Destruction",
+            author:{
+                firstName: "Cathy",
+                lastName: "Oneil"
+                }
+            },
+            {
+                title: "The Age of Surveillance Capitalism",
+                author:{
+                    firstName: "Shoshana",
+                    lastName: "Zuboff"
+                }
+            },
+            {
+                title: "Broad Band: The Untold Story of the Women Who Made the Internet",
+                author:{
+                    firstName: "Claire",
+                    lastName: "Evans"
+                }
+            },
+            {
+                title: "Nicomachean Ethics",
+                author:{
+                    firstName: "Aristotle",
+                    lastName: " "
+                }
+            }
+
+    ];
+
+    console.log(books[0].title);
+    console.log(books[0].author.firstName);
+    console.log(books[0].author.lastName);
 
 
 
@@ -109,6 +156,17 @@
      *      ...
      */
 
+
+    books.forEach(function(book, i) {
+        console.log("Book " + i + " is " + book.title);
+        console.log("The author's name is: " + book.author.firstName + " " + book.author.lastName);
+        console.log(" ----------- ");
+    });
+
+
+
+
+
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
@@ -119,5 +177,9 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+
+
+
+
 
 })();
