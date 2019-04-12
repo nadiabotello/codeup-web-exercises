@@ -12,14 +12,14 @@
      *  > console.log(person.lastName) // "Sanchez"
      */
 
-    var person =
-        {
-        firstName: "Nadia",
-        lastName: "Botello"
-        };
-
-    console.log(person.firstName);
-    console.log(person.lastName);
+    // var person =
+    //     {
+    //     firstName: "Nadia",
+    //     lastName: "Botello"
+    //     };
+    //
+    // console.log(person.firstName);
+    // console.log(person.lastName);
 
 
 
@@ -34,11 +34,11 @@
      */
 
 
-    person.hello = function() {
-        alert("Hello from " + person.firstName + " " + person.lastName);
-    };
-
-    person.hello();
+    // person.hello = function() {
+    //     alert("Hello from " + person.firstName + " " + person.lastName);
+    // };
+    //
+    // person.hello();
 
 
 
@@ -62,7 +62,19 @@
         {name: 'George', amount: 320}
     ];
 
+    // function needToPay(num) {
+    //     if (num > 200) {
+    //         return num - (num * .12);
+    //     }
+    // }
+    //
+    // console.log(needToPay(180));
 
+    shoppers.forEach(function(shopper, i) {
+            console.log("Shopper " + i + " is " + shopper.name);
+            console.log("Shopper " + shopper[0].name + " purchased " + shopper.amount + " .");
+            console.log(" ----------- ");
+        });
 
 
 
@@ -84,49 +96,49 @@
      * > console.log(books[0].author.lastName) // "Adams"
      */
 
-    var books =
-        [
-            {
-            title: "Figuring",
-            author:{
-                firstName: "Maria",
-                lastName: "Popova"
-                }
-            },
-            {
-            title: "Weapons of Math Destruction",
-            author:{
-                firstName: "Cathy",
-                lastName: "Oneil"
-                }
-            },
-            {
-                title: "The Age of Surveillance Capitalism",
-                author:{
-                    firstName: "Shoshana",
-                    lastName: "Zuboff"
-                }
-            },
-            {
-                title: "Broad Band: The Untold Story of the Women Who Made the Internet",
-                author:{
-                    firstName: "Claire",
-                    lastName: "Evans"
-                }
-            },
-            {
-                title: "Nicomachean Ethics",
-                author:{
-                    firstName: "Aristotle",
-                    lastName: " "
-                }
-            }
-
-    ];
-
-    console.log(books[0].title);
-    console.log(books[0].author.firstName);
-    console.log(books[0].author.lastName);
+    // var books =
+    //     [
+    //         {
+    //         title: "Figuring",
+    //         author:{
+    //             firstName: "Maria",
+    //             lastName: "Popova"
+    //             }
+    //         },
+    //         {
+    //         title: "Weapons of Math Destruction",
+    //         author:{
+    //             firstName: "Cathy",
+    //             lastName: "Oneil"
+    //             }
+    //         },
+    //         {
+    //             title: "The Age of Surveillance Capitalism",
+    //             author:{
+    //                 firstName: "Shoshana",
+    //                 lastName: "Zuboff"
+    //             }
+    //         },
+    //         {
+    //             title: "Broad Band: The Untold Story of the Women Who Made the Internet",
+    //             author:{
+    //                 firstName: "Claire",
+    //                 lastName: "Evans"
+    //             }
+    //         },
+    //         {
+    //             title: "Nicomachean Ethics",
+    //             author:{
+    //                 firstName: "Aristotle",
+    //                 lastName: " "
+    //             }
+    //         }
+    //
+    // ];
+    //
+    // console.log(books[0].title);
+    // console.log(books[0].author.firstName);
+    // console.log(books[0].author.lastName);
 
 
 
@@ -157,11 +169,11 @@
      */
 
 
-    books.forEach(function(book, i) {
-        console.log("Book " + i + " is " + book.title);
-        console.log("The author's name is: " + book.author.firstName + " " + book.author.lastName);
-        console.log(" ----------- ");
-    });
+    // books.forEach(function(book, i) {
+    //     console.log("Book " + i + " is " + book.title);
+    //     console.log("The author's name is: " + book.author.firstName + " " + book.author.lastName);
+    //     console.log(" ----------- ");
+    // });
 
 
 
