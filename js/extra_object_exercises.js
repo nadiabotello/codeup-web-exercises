@@ -21,7 +21,8 @@ var beverages = [
      type: "Soda",
      volumeInLiters: " ",
      priceInCents: ".90",
-     expirationDate: ""
+     expirationDate: "",
+     dateTimesOfLastSips:
     }
 
 ];

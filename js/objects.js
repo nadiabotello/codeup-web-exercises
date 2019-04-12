@@ -66,6 +66,7 @@
     console.log(shoppers[1].name + "'s total before discount is " + shoppers[1].amount + ".");
     console.log(shoppers[2].name + "'s total before discount is " + shoppers[2].amount + ".");
 
+
     shoppers.forEach(function(shoppers, i) {
         for (i = 0; i < shoppers.length; i++);
 
@@ -86,6 +87,30 @@
 
         console.log(" - - - - - ");
     });
+
+    // function calculateDiscount(total) {
+    //     var output = 0;
+    //     if (total > 200) {
+    //         output = total * .12;
+    //     }
+    //     return output;
+    // }
+    //
+    // function displayShopperInfo(shopper) {
+    //     var output = "";
+    //     output += shoppers.name + " spent $" + shopper.amount.toFixed(2);
+    //     output += " and received a discount of $" + calculateDiscount(shopper.amount).toFixed(2) + ".";
+    //     output += " and paid $" + (shopper.amount - calculateDiscount(shopper.amount)).toFixed(2) + ".";
+    //     return output;
+    // }
+
+        // function displayShoppersInfo(shoppers) {
+        //     shoppers.forEach(function(shopper) {
+        //         console.log(displayShoppersInfo(shopper));
+        //     });
+        // }
+        //
+        // displayShoppersInfo(shoppers);
 
 
 

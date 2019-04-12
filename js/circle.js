@@ -17,7 +17,7 @@
             // Otherwise, output the complete value
 
             if (doRounding === true) {
-                return Math.round(circle.getArea());
+                return Math.round(3);
             } else {
                 return console.log("Area of a circle with radius: " + this.radius + ", is: " + circle.getArea());
             }
