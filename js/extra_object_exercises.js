@@ -16,46 +16,88 @@
 //
 
 var beverages = [
+
     {
      brandName: "Dr. Pepper",
      type: "Soda",
-     volumeInLiters: " ",
-     priceInCents: ".90",
-     expirationDate: "",
-     dateTimesOfLastSips:
+     volumeInLiters: "2",
+     priceInCents: "1.67",
+     expirationDate: "4/20/20",
+     dateTimesOfLastSips: "4/12/19 3:09pm",
+     isOpen: "Yes"
+    },
+    {
+        brandName: "Bill Millers",
+        type: "Sweet Tea",
+        volumeInLiters: "2",
+        priceInCents: ".99",
+        expirationDate: "4/12/19",
+        dateTimesOfLastSips: "",
+        isOpen: "No"
+    },
+    {
+        brandName: "Topo Chico",
+        type: "Mineral Water",
+        volumeInLiters: "2",
+        priceInCents: "3.99",
+        expirationDate: "4/20/22",
+        dateTimesOfLastSips: {
+            dateOfLastSip: "4/12/19",
+            timeOfLastSip: "10:09am"
+        },
+        isOpen: "Yes"
     }
-
 ];
 
+beverages.brandName = "La Croix";
+beverages.type = "Flavored carbonated water";
 
 
 
 
-// Define your objects using both literal syntax to create all properties and values at once and also try defining empty objects and assign property values in separate statements.
+// Define your objects using both literal syntax to create all properties and values at once and also try
+// defining empty objects and assign property values in separate statements.
 //
 //
 //     Mini Exercise 2
 //
-// var users = [
-//     {
-//         name: "Sam",
-//         age: 21
-//     },
-//     {
-//         name: "Cathy",
-//         age: 34
-//     },
-//     {
-//         name: "Karen",
-//         age: 43
-//     }
-// ];
+var users = [
+    {
+        name: "Sam",
+        age: 21
+    },
+    {
+        name: "Cathy",
+        age: 34
+    },
+    {
+        name: "Karen",
+        age: 43
+    }
+];
 //
 // 1. Log the names of all users in a single console log seperated by spaces.
 // 2. Change the names of all users to "John Doe"
 // 3. Increase the current age of all users by 1
 //
 // Can you accomplish each step using iteration?
+
+console.log(users[0].name + " " + users[1].name + " " + users[2].name);
+
+users.name = "John Doe";
+console.log(users.name);
+
+// users.age = Number(users.age + 1);
+// console.log(users[0].age + " " + users[1].age + ' ' + users[2].age);
+
+
+users.forEach(function(user) {
+    var output = 0;
+    output += (user.age + 1);
+    console.log(output);
+});
+
+
 //
 //
 //     Mini Exercise 3
@@ -77,6 +119,44 @@ var beverages = [
 // vaccinate() - takes in an argument for the name of the shot and adds a new shot with the current date to the shotRecords array
 //
 //
+
+var dogs = [
+    {
+        breed: "dachshund",
+        weightInPoints: 9,
+        age: 5,
+        color: "black and tan",
+        sterilized: false,
+        shotRecords:{
+            date: "1/2015",
+            typeOfShot: "rabies"
+        }
+    }
+];
+
+dogs.bark = function() {
+    console.log("Woof!");
+};
+
+dogs.bark();
+
+dogs.forEach(function(dog) {
+    var output = 0;
+    output += (dog.age + 1);
+    console.log(output);
+});
+
+dogs.fix = function(dog) {
+    if (dog.sterilized === false) {
+        return console.log(true);
+    }
+};
+
+dogs.fix();
+
+
+
+
 // BONUS 1 (expanding on the books object exercise):
 //
 // Add a property "keywords" that contains an array of possible genres the book may be categorized by
