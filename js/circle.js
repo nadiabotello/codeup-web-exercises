@@ -20,6 +20,11 @@
             } else if (doRounding === false) {
                 return console.log("Area of a circle with radius: " + this.radius + ", is: " + circle.getArea());
             }
+
+            // var area = (doRounding) ? Math.round(this.getArea()) : this.getArea();
+            //
+            // console.log("Area of a circle with radius: " + this.radius)
+
         }
     };
 
