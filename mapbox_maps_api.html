@@ -58,36 +58,36 @@
     //     map.setZoom(15);
     // });
 
-    var dmitrisInfo = {
-        address: "944 N 2nd St, Philadelphia, PA 19123",
-        popupHTML: "<p>Dmitri's Philadelphia</p>"
-    };
+    // var dmitrisInfo = {
+    //     address: "944 N 2nd St, Philadelphia, PA 19123",
+    //     popupHTML: "<p>Dmitri's Philadelphia</p>"
+    // };
+    //
+    // var debsInfo = {
+    //     address: "747 Columbia St, Hudson, New York 12534-2415",
+    //     popupHTML: "<p>Little Deb's Oasis Hudson</p>"
+    // };
+    //
+    // var mogadorInfo = {
+    //     address: "101 Saint Marks Place, East Village, NY, 10009",
+    //     popupHTML: "<p>Cafe Mogador New York</p>"
+    // };
 
-    var debsInfo = {
-        address: "747 Columbia St, Hudson, New York 12534-2415",
-        popupHTML: "<p>Little Deb's Oasis Hudson</p>"
-    };
+    // function placeMarkerAndPopup(info, token, map) {
+    //     geocode(info.address, token).then(function(coordinates) {
+    //         var popup = new mapboxgl.Popup()
+    //             .setHTML(info.popupHTML);
+    //         var marker = new mapboxgl.Marker()
+    //             .setLngLat(coordinates)
+    //             .addTo(map)
+    //             .setPopup(popup);
+    //         // popup.addTo(map);
+    //     });
+    // }
 
-    var mogadorInfo = {
-        address: "101 Saint Marks Place, East Village, NY, 10009",
-        popupHTML: "<p>Cafe Mogador New York</p>"
-    };
-
-    function placeMarkerAndPopup(info, token, map) {
-        geocode(info.address, token).then(function(coordinates) {
-            var popup = new mapboxgl.Popup()
-                .setHTML(info.popupHTML);
-            var marker = new mapboxgl.Marker()
-                .setLngLat(coordinates)
-                .addTo(map)
-                .setPopup(popup);
-            // popup.addTo(map);
-        });
-    }
-
-    placeMarkerAndPopup(dmitrisInfo, accessToken, map);
-    placeMarkerAndPopup(debsInfo, accessToken, map);
-    placeMarkerAndPopup(mogadorInfo, accessToken, map);
+    // placeMarkerAndPopup(dmitrisInfo, accessToken, map);
+    // placeMarkerAndPopup(debsInfo, accessToken, map);
+    // placeMarkerAndPopup(mogadorInfo, accessToken, map);
 
 
     // refactored array
@@ -96,33 +96,35 @@
         {
             name: "Dmitri's",
             address: "944 N 2nd St, Philadelphia, PA 19123",
-            popupHTML: "<p>Dmitri's Philadelphia</p>"
+            message: "<p>Dmitri's Philadelphia</p>"
         },
         {
             name: "Little Deb's",
             address: "747 Columbia St, Hudson, New York 12534-2415",
-            popupHTML: "<p>Little Deb's Oasis Hudson</p>"
+            message: "<p>Little Deb's Oasis Hudson</p>"
         },
         {
             name: "Cafe Mogador",
             address: "101 Saint Marks Place, East Village, NY, 10009",
-            popupHTML: "<p>Cafe Mogador New York</p>"
+            message: "<p>Cafe Mogador New York</p>"
         }
     ];
 
 
-    // favRestaurants.forEach(function(restaurant) {
-    //    favRestaurants[i].forEach(function(result) {
-    //        placeMarkerAndPopup([i], accessToken, map);
-    //    });
-    // });
+    function placeMarkerAndPopup(restaurant, token, map) {
+        return geocode(restaurant.address, token).then(function(coordinates) {
+            var popup = new mapboxgl.Popup()
+                .setHTML(restaurant.message);
+            return marker = new mapboxgl.Marker()
+                .setLngLat(coordinates)
+                .addTo(map)
+                .setPopup(popup);
+        });
+    }
+    for (var i = 0; i < favRestaurants.length; i ++) {
+        placeMarkerAndPopup(favRestaurants[i], accessToken, map);
+    }
 
-
-    // cars.forEach(function(car) {
-    //     car.features.forEach(function(feature) {
-    //         console.log(feature);
-    //     });
-    // });
 
 
 
