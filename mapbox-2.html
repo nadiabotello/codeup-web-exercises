@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapbox API exercise #2</title>
+
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+
+        #map {
+            width: 1200px;
+            height: 80vh;
+            margin: 0 auto;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<!--Mini - Exercise 2 (before popups)-->
+
+<!--Create an HTML file called mapbox-2.html-->
+
+<!--In this file, create a Mapbox map that shows Washington D.C. and places a marker on the Lincoln Memorial.-->
+
+<h1>Mapbox API exercise #2</h1>
+
+<div id='map'></div>
+
+
+
+
+
+
+
+<!-- Mapbox JS -->
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<script src="js/keys.js"></script>
+
+<!-- Custom JS -->
+
+<script>
+    mapboxgl.accessToken = mapboxKey;
+
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v9',
+        zoom: 10,
+        center: [-77.1550046, 38.8935124]
+    });
+
+    var marker = new mapboxgl.Marker()
+        .setLngLat([-77.05237, 38.8892686])
+        .addTo(map);
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

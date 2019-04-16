@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapbox API exercise</title>
+
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+
+        #map {
+            width: 1200px;
+            height: 80vh;
+            margin: 0 auto;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<!--Mini - Exercise 3 (before geocoding)-->
+
+<!--Create an HTML file called mapbox-3.html and copy your code over from mapbox-2. -->
+<!--Add a popup to the Lincoln Memorial marker that contains the text "Lincoln Memorial"-->
+
+<h1>Mapbox API exercise #3</h1>
+
+<div id='map'></div>
+
+
+
+
+
+
+
+<!-- Mapbox JS -->
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<script src="js/keys.js"></script>
+<script src="js/mapbox-geocoder-utils.js"></script>
+
+<!-- Custom JS -->
+
+<script>
+    mapboxgl.accessToken = mapboxKey;
+
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v9',
+        zoom: 10,
+        center: [-77.1550046, 38.8935124]
+    });
+
+    var marker = new mapboxgl.Marker()
+        .setLngLat([-77.05237, 38.8892686])
+        .addTo(map);
+
+    var lincolnPopup = new mapboxgl.Popup()
+        .setHTML("<p>Lincoln Memorial</p>")
+        .addTo(map);
+
+    marker.setPopup(lincolnPopup)
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>

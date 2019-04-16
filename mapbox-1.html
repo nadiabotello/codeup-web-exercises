@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapbox API exercise</title>
+
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+
+        #map {
+            width: 1200px;
+            height: 80vh;
+            margin: 0 auto;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<!--Mini - Exercise 1 (before markers)-->
+
+<!--Create an HTML file called mapbox-1.html-->
+
+<!--In this file, create a Mapbox map that shows your home town. -->
+<!--After 5 seconds, have the map automatically change to a map of the entire United States using a satellite style.-->
+
+<!--// html -->
+
+<h1>Mapbox API exercise</h1>
+
+<div id='map'></div>
+
+
+
+
+
+
+
+<!-- Mapbox JS -->
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+<script src="js/keys.js"></script>
+
+<!-- Custom JS -->
+
+<script>
+    mapboxgl.accessToken = mapboxKey;
+
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v9',
+        zoom: 10,
+        center: [-98.4916, 29.4252]
+    });
+
+    var marker = new mapboxgl.Marker()
+        .setLngLat([-98.4916, 29.4260])
+        .addTo(map);
+
+
+
+    // var count = 0;
+    // var max = 5;
+    // var interval = 1000; // interval time in milliseconds
+    //
+    // var intervalId = setInterval(function () {
+    //     if (count >= max) {
+    //         clearInterval(intervalId);
+    //         console.log('All done');
+    //
+    //         var newMap = new mapboxgl.Map({
+    //             container: 'map',
+    //             style: 'mapbox://styles/mapbox/satellite-v9',
+    //             zoom: 3,
+    //             center: [-98.4916, 29.4252]
+    //         });
+    //
+    //     } else {
+    //         count++;
+    //         console.log('Count ' + count);
+    //     }
+    // }, interval);
+
+
+    // setTimeout(function () {
+    //     map.setZoom(2);
+    //     map.setStyle('mapbox://styles/mapbox/satellite-v9');
+    // }, 5000);
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
