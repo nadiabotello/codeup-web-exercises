@@ -1,23 +1,27 @@
 "use strict";
 
-$('img').css('height', '300px');
-
-$('li').css('font-size', '20px');
-
-$('h1, p, li')
-    .css('background', 'yellow')
-    .css('text-align', 'center');
-
-$('img')
+$('img').css('height', '300px')
     .css('display', 'block')
     .css('margin-left', 'auto')
     .css('margin-right', 'auto');
 
-function animateIt() {
-    $( "img" ).slideToggle( "slow", animateIt );
-}
+// function animateIt() {
+//     $( "img" ).slideToggle( "slow", animateIt );
+// }
+//
+// animateIt();
 
-animateIt();
 
-var contents = $('h1').html();
-alert(contents);
+$('h1').click(function() {
+   $(this).css('background', 'yellow');
+});
+
+$('p').dblclick(function() {
+    $(this).css('font-size', '18px')
+});
+
+$('li').hover(function() {
+    $(this).css('color', 'red');
+}, function() {
+    $(this).css('color', 'black');
+});
