@@ -1,7 +1,12 @@
 "use strict";
 
-$(document).ready(function() {
+$('#cat-header')
+    .css('color', 'red')
+    .css('text-align', 'center');
 
-    alert( 'The DOM has finished loading!' );
+$('p').css('text-align', 'center');
 
-});
+$('.ul').css('text-align', 'center');
+
+var contents = $('p').html();
+alert(contents);
