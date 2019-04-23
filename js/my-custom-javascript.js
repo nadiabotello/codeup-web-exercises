@@ -1,12 +1,8 @@
 "use strict";
 
-$('#cat-header')
-    .css('color', 'red')
-    .css('text-align', 'center');
+$('.codeup').css('border', '1px solid red');
 
-$('p').css('text-align', 'center');
+$('img').css('height', '300px');
 
-$('.ul').css('text-align', 'center');
-
-var contents = $('p').html();
-alert(contents);
+// var contents = $('p').html();
+// alert(contents);
