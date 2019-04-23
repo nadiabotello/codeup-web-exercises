@@ -21,7 +21,7 @@ $('p').dblclick(function() {
 });
 
 $('li').hover(function() {
-    $(this).css('color', 'red');
+    $('li').css('color', 'red');
 }, function() {
-    $(this).css('color', 'black');
+    $('li').css('color', 'black');
 });
