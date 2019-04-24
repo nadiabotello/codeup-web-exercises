@@ -24,8 +24,6 @@ var pushArr = [];
 
 $(document).keyup(function(event){
 
-    // console.log(event.key);
-
     var konamid = true;
 
     pushArr.push(event.key);
