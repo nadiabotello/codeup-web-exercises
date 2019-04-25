@@ -24,20 +24,33 @@ $(document).ready(function() {
     });
 
 
-    // Create 3 divs that each look like a picture Frame; each one should have a unique background
-    // image and a button underneath that swaps the image from the frame. Use Traversing functions
-    // of jQuery to accomplish this.
-    //
-    //     The rules are the following:
-    //
-    //     The left frame swaps to the right and takes the image from the frame in the center.
-    //     The center frame swaps randomly to either the left or right.
-    //     The right frame swaps to the left and takes the image from the frame in the center.
+    // At the top of the page, add a div with two elements, an h1 that reads "Would you like to sign up
+    // for our newsletter?" and a span that has an 'x' in it. When the 'x' is clicked, hide the entire div element.
 
+    $('#x').click(function() {
+        $('#newsletter').hide();
+    });
 
+    // The uls next to each h3 that contain facts about each park should start out hidden,
+    // and when the corresponding h3 is clicked,
+    // the display of the ul should be toggled with a sliding effect.
 
+    $('#national-park-bb').click(function(event) {
+       $('#national-parks-1').slideToggle();
+    });
 
+    $('#national-park-dv').click(function(event) {
+        $('#national-parks-2').slideToggle();
+    });
 
+    $('#national-park-jt').click(function(event) {
+        $('#national-parks-3').slideToggle();
+    });
+
+    // After the user has been on the page for 8 seconds, an h2 should fade in
+    // that asks the user to register for the site.
+
+    $('#register').delay(8000).fadeIn();
 
 
 });

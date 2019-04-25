@@ -10,20 +10,23 @@
     background-color: yellow;
 }
 
-.grid {
-    display: table;
-    border-spacing: 5px;
-    margin: auto;
+h1{
+    text-align: center;
 }
 
-.row {
-    display: table-row
+#national-parks-1, #national-parks-2, #national-parks-3{
+    display: none;
 }
 
-.frame {
-    width: 300px;
-    height: 600px;
-    background: grey;
-    display: table-cell;
+h2{
+    text-align: center;
+    color: red;
 }
 
+#register{
+    display: none;
+}
+
+#x{
+    color: red;
+}
