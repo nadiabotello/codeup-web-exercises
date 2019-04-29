@@ -18,11 +18,12 @@
         color: red;
         text-align: center;
     }
-    .btn{
-        width: 200px;
-    }
     p{
         font-size: 12px;
+    }
+    img{
+        width: 50px;
+        height: 50px;
     }
 
 
@@ -34,6 +35,7 @@
     <div class="blog">
         <h2>Title</h2>
         <p>Date</p>
+        <img src="" alt="" />
         <p>Content</p>
         <p>Categories</p>
     </div>
@@ -57,6 +59,7 @@
             html += '<h2>' + post.title + '</h2>';
             // html += '<tbody id="insertProducts"></tbody>';
             html += '<p>Date: ' + post.date + '</p>';
+            html += '<img src="' + post.image + '" alt="" />';
             html += '<p>Content: ' + post.content + '</p>';
             html += '<p>Categories: ' + post.categories + '</p>';
             html += '</div>';
