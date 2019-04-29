@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajax Blog</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+    #posts{
+        width: 100%;
+        /*text-align: center;*/
+        /*display: none;*/
+    }
+    h2{
+        color: red;
+    }
+    h1{
+        color: red;
+        text-align: center;
+    }
+    .btn{
+        width: 200px;
+    }
+    p{
+        font-size: 12px;
+    }
+
+
+
+</style>
+<body>
+
+<div id="posts">
+    <div class="blog">
+        <h2>Title</h2>
+        <p>Date</p>
+        <p>Content</p>
+        <p>Categories</p>
+    </div>
+</div>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+(function() {
+    "use strict";
+
+    function postsHtml(posts) {
+
+        var html = '';
+
+        posts.forEach(function(post) {
+            html += '<div class="blog">';
+            html += '<h2>' + post.title + '</h2>';
+            // html += '<tbody id="insertProducts"></tbody>';
+            html += '<p>Date: ' + post.date + '</p>';
+            html += '<p>Content: ' + post.content + '</p>';
+            html += '<p>Categories: ' + post.categories + '</p>';
+            html += '</div>';
+        });
+
+        return html;
+    }
+
+    $.ajax('data/blog.json').done(function (posts) {
+        console.log(posts);
+        $('#posts').html(postsHtml(posts));
+    }).fail(function () {
+        console.log("ERROR!");
+    });
+
+
+
+
+
+
+
+
+
+
+
+})();
+</script>
+
+
+
+
+<script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous">
+</script>
+</body>
+</html>
