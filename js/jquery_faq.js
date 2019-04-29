@@ -12,15 +12,14 @@ $(document).ready(function() {
     // When any h3 is clicked, the list underneath it should be bolded. Use font-weight: bold to achieve this.
 
     $('h3').click(function(event) {
-        $(this).next().css('font-weight', 'bold');
+        $(this).next().children().css('font-weight', 'bold');
     });
-
 
     // When any list item is clicked, first li of the parent ul should have a font color of blue.
 
     $('li').click(function(event) {
         $(this).closest('ul').find('li:first').css("color", "blue");
-
+        // $(this).parent().children().first()
     });
 
 
@@ -51,6 +50,31 @@ $(document).ready(function() {
     // that asks the user to register for the site.
 
     $('#register').delay(8000).fadeIn();
+
+
+    // Make cactus box move
+
+    $(document).keydown(function(e) {
+
+        switch(e.key) {
+            case (e.key === "ArrowLeft"):
+                $("#cactus").animate({ "left": "+=50px" }, "slow" );
+                break;
+            case (e.key === "ArrowRight"):
+                $("#cactus").animate({ "right": "+=50px" }, "slow" );
+                break;
+            case (e.key === "ArrowUp"):
+                $("#cactus").animate({ "up": "+=50px" }, "slow" );
+                break;
+            case (e.key === "ArrowDown"):
+                $("#cactus").animate({ "down": "+=50px" }, "slow" );
+                break;
+        }
+
+    });
+
+
+
 
 
 });

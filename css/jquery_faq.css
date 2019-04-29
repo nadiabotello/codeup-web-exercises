@@ -30,3 +30,11 @@ h2{
 #x{
     color: red;
 }
+
+#cactus {
+    background-image: url("/img/cactus.jpg");
+    background-color: grey;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
