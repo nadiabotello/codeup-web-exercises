@@ -1,15 +1,6 @@
-"use strict"; // Start of use strict
+"use strict";
 
-    // Floating label headings for the contact form
-    $("body").on("input propertychange", ".floating-label-form-group", function(e) {
-        $(this).toggleClass("floating-label-form-group-with-value", !!$(e.target).val());
-    }).on("focus", ".floating-label-form-group", function() {
-        $(this).addClass("floating-label-form-group-with-focus");
-    }).on("blur", ".floating-label-form-group", function() {
-        $(this).removeClass("floating-label-form-group-with-focus");
-    });
-
-    // Show the navbar when the page is scrolled up
+ // Show the navbar when the page is scrolled up
     var MQL = 992;
 
     //primary navigation slide-in effect
@@ -45,9 +36,9 @@
         posts.forEach(function(post) {
             html += '<div class="post-preview">';
             html += '<h2 class="post-title">' + post.title + '</h2>';
-            html += '<h3 class="post-subtitle">' + post.categories + '</h3>';
+            html += '<h3 class="post-subtitle"><em>Tags: ' + post.categories + '</em></h3>';
             html += '<p class="content">' + post.content + '</p>';
-            html += '<p class="post-meta">Posted by 1 on' + post.date + '</p>';
+            html += '<p class="post-meta">Posted by Cat on ' + post.date + '</p>';
             html += '</div>';
             html += '<hr>';
         });
