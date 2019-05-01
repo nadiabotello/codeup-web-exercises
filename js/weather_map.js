@@ -78,6 +78,11 @@ var map = new mapboxgl.Map({
     center: [-98.4916, 29.4252]
 });
 
+map.addControl(new MapboxGeocoder({
+    accessToken: mapboxgl.accessToken,
+    mapboxgl: mapboxgl
+}));
+
 
 $('#submit').click(function(data) {
     console.log(data);
