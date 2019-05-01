@@ -16,6 +16,7 @@ var seconds = 1556720525;
 var dateObject = new Date(seconds * 1000);
 console.log(dateObject.toString());
 
+
 var icons = {
     "clear-day" : "icon/SVG/Sun.svg",
     "clear-night" : "icon/SVG/Moon-Full.svg",
@@ -85,7 +86,7 @@ mapboxgl.accessToken = mapboxKey;
 //     .setLngLat([-98.4916, 29.4260])
 //     .addTo(map);
 
-var coordinates = document.getElementById('coordinates');
+// var coordinates = document.getElementById('coordinates');
 
 var map = new mapboxgl.Map({
     container: 'map',
@@ -97,10 +98,19 @@ var map = new mapboxgl.Map({
 map.addControl(new MapboxGeocoder({
     accessToken: mapboxgl.accessToken,
     mapboxgl: mapboxKey
-}));
+})
+);
+
+// var lngLat = getLngLat();
+// function getLngLat() {
+//
+//     type.features.
+// }
+
 
 var marker = new mapboxgl.Marker({
-    draggable: true
+    draggable: true,
+    icon: "#1034A6"
 })
     .setLngLat([-98.4916, 29.4252])
     .addTo(map);
@@ -127,6 +137,36 @@ function onDragEnd() {
 }
 
 marker.on('dragend', onDragEnd);
+
+
+var client = new MapboxClient(mapboxgl.accessToken);
+console.log(client);
+
+var address = '';
+
+var test = client.geocodeForward(address, function(err, data, res) {
+    // data is the geocoding result as parsed JSON
+    // res is the http response, including: status, headers and entity properties
+
+    console.log(res);
+    console.log(res.url);
+    console.log(data);
+
+    var coordinates = data.features[0].center;
+
+    var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/nadbot/cjv5l7j4a1k1l1fqof618dtg2',
+        center: coordinates,
+        zoom: 4
+    });
+
+    new mapboxgl.Marker()
+        .setLngLat(coordinates)
+        .addTo(map);
+
+
+});
 
 
 // $('#submit').click(function(data) {
