@@ -7,6 +7,8 @@ var corsUrl = "https://cors-anywhere.herokuapp.com/";
 var lat = 29.4241;
 var lng = -98.4936;
 
+
+
 var lang = '?lang=eo';
 
 var seconds = 1556720525;
@@ -69,21 +71,80 @@ $.get(corsUrl + darkSkyUrl + darkSkyAPIKey + "/" + lat + "," + lng + "/" + lang,
 
 
 
+
 mapboxgl.accessToken = mapboxKey;
+
+// var map = new mapboxgl.Map({
+//     container: 'map',
+//     style: 'mapbox://styles/nadbot/cjv5l7j4a1k1l1fqof618dtg2',
+//     zoom: 4,
+//     center: [-98.4916, 29.4252]
+// });
+
+// var marker = new mapboxgl.Marker()
+//     .setLngLat([-98.4916, 29.4260])
+//     .addTo(map);
+
+var coordinates = document.getElementById('coordinates');
 
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/nadbot/cjv5l7j4a1k1l1fqof618dtg2',
-    zoom: 4,
-    center: [-98.4916, 29.4252]
+    center: [-98.4916, 29.4252],
+    zoom: 4
 });
 
 map.addControl(new MapboxGeocoder({
     accessToken: mapboxgl.accessToken,
-    mapboxgl: mapboxgl
+    mapboxgl: mapboxKey
 }));
 
+var marker = new mapboxgl.Marker({
+    draggable: true
+})
+    .setLngLat([-98.4916, 29.4252])
+    .addTo(map);
 
-$('#submit').click(function(data) {
-    console.log(data);
-});
+function onDragEnd() {
+    var lngLat = marker.getLngLat();
+
+    $.get(corsUrl + darkSkyUrl + darkSkyAPIKey + "/" + lngLat.lat + "," + lngLat.lng + "/" + lang, {
+        daily: {
+            data: {
+                temperatureHigh: "",
+                temperatureLow: "",
+                cloudCover: "",
+                humidity: "",
+                windGust: "",
+                pressure: ""
+            }
+        }
+
+    }).done(function(data) {
+        console.log(data);
+        $('.currentSA').html(postsHtml(data));
+    });
+}
+
+marker.on('dragend', onDragEnd);
+
+
+// $('#submit').click(function(data) {
+//     console.log(data);
+// });
+
+// $.get(corsUrl + darkSkyUrl + darkSkyAPIKey + "/" + lat + "," + lng + "/" + lang, {
+//     daily: {
+//         data: {
+//             temperatureHigh: "",
+//             temperatureLow: "",
+//             cloudCover: "",
+//             humidity: "",
+//             windGust: "",
+//             pressure: ""
+//         }
+//     }
+//
+// }).done(function(data) {
+//     console.log(data);
+// });
