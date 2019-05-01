@@ -2,31 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Weather Map Project</title>
+    <title>Minimalist Weather Map Project</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="css/weather_map.css" rel="stylesheet">
 
 </head>
 <body>
 
-<br>
-<br>
 <h1>Weather Map</h1>
-<br>
-
-<br>
 
 
 <div class="row mx-auto">
-    <div class="column">
+    <div class="column-lg-6">
         <div class="card">
             <div class="container">
                 <div class="currentSA">
-                    <h1>53/42</h1>
-                    <img>
+                    <h3>53/42</h3>
+                    <img class="mx-auto">
                     <h5>Clouds:</h5>
                     <h5>Humidity:</h5>
                     <h5>Wind:</h5>
@@ -35,7 +31,8 @@
             </div>
         </div>
     </div>
-<!--    <div class="column">-->
+    <div class="column-lg-6">
+        <div id='map'></div>
 <!--        <div class="card">-->
 <!--            <div class="container">-->
 <!--                <div class="currentSA">-->
@@ -45,7 +42,7 @@
 <!--                    <h5>Humidity:</h5>-->
 <!--                    <h5>Wind:</h5>-->
 <!--                    <h5>Pressure:</h5>-->
-<!--                </div>-->
+                </div>
 <!--            </div>-->
 <!--        </div>-->
 <!--    </div>-->
@@ -65,11 +62,25 @@
 <!--    </div>-->
 </div>
 
-<br>
+<!--<br>-->
 
-<div id='map'></div>
+<!--<div id='map'></div>-->
 
-<br>
+<!--<br>-->
+
+<!--<form>-->
+<!--    Latitude:<br>-->
+<!--    <input type="text" name="lat"><br>-->
+<!--    Longitude:<br>-->
+<!--    <input type="text" name="long"><br><br>-->
+<!--    <button type="submit" id="submit">Submit</button>-->
+<!--</form>-->
+
+<!--<br>-->
+
+<!--<div id='map'></div>-->
+
+<!--<br>-->
 
 
 

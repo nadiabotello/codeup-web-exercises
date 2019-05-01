@@ -27,27 +27,24 @@ var icons = {
     "partly-cloudy-night" : "icon/SVG/Cloud-Moon.svg"
     };
 
-// $.get(corsUrl + darkSkyUrl + darkSkyAPIKey + "/" + lat + "," + lng + "/" + lang).done(function(data) {
-//     console.log(data);
-// });
-
 function postsHtml(posts) {
 
     var html = '';
     var i;
 
+
     for (i = 0; i <= 2; i++) {
         html += '<div class="currentSA">';
-        html += '<h1>' + posts.daily.data[i].temperatureHigh + "/";
-        html += posts.daily.data[i].temperatureLow + '</h1>';
-        html += '<img src="' + icons[posts.daily.data[i].icon] + '">';
-        html += '<h5>Clouds: ' + posts.daily.data[i].cloudCover + '</h5>';
-        html += '<h5>Humidity: ' + posts.daily.data[i].humidity + '</h5>';
-        html += '<h5>Wind: ' + posts.daily.data[i].windGust + '</h5>';
-        html += '<h5>Pressure: ' + posts.daily.data[i].pressure + '</h5>';
+        html += '<h4>' + posts.daily.data[i].temperatureHigh + "/";
+        html += posts.daily.data[i].temperatureLow + '<img src="' + icons[posts.daily.data[i].icon] + '"></h4>';
+        // html += '<img src="' + icons[posts.daily.data[i].icon] + '">';
+        html += '<h6>Clouds: ' + posts.daily.data[i].cloudCover + '</h6>';
+        html += '<h6>Humidity: ' + posts.daily.data[i].humidity + '</h6>';
+        html += '<h6>Wind: ' + posts.daily.data[i].windGust + '</h6>';
+        html += '<h6>Pressure: ' + posts.daily.data[i].pressure + '</h6>';
         html += '</div>';
+        // html += '<br>';
     }
-
 
     return html;
 }
@@ -72,12 +69,16 @@ $.get(corsUrl + darkSkyUrl + darkSkyAPIKey + "/" + lat + "," + lng + "/" + lang,
 
 
 
-
 mapboxgl.accessToken = mapboxKey;
 
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/mapbox/dark-v10',
-    zoom: 10,
+    style: 'mapbox://styles/nadbot/cjv5l7j4a1k1l1fqof618dtg2',
+    zoom: 4,
     center: [-98.4916, 29.4252]
+});
+
+
+$('#submit').click(function(data) {
+    console.log(data);
 });
