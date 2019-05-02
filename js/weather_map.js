@@ -71,22 +71,9 @@ $.get(corsUrl + darkSkyUrl + darkSkyAPIKey + "/" + lat + "," + lng + "/" + lang,
 
 
 
-
-
 mapboxgl.accessToken = mapboxKey;
 
-// var map = new mapboxgl.Map({
-//     container: 'map',
-//     style: 'mapbox://styles/nadbot/cjv5l7j4a1k1l1fqof618dtg2',
-//     zoom: 4,
-//     center: [-98.4916, 29.4252]
-// });
 
-// var marker = new mapboxgl.Marker()
-//     .setLngLat([-98.4916, 29.4260])
-//     .addTo(map);
-
-// var coordinates = document.getElementById('coordinates');
 
 var map = new mapboxgl.Map({
     container: 'map',
@@ -97,8 +84,11 @@ var map = new mapboxgl.Map({
 
 map.addControl(new MapboxGeocoder({
     accessToken: mapboxgl.accessToken,
-    mapboxgl: mapboxKey
-})
+    marker:false
+}).on('result',function(data){
+        marker.setLngLat(data.result.center);
+        onDragEnd();
+    })
 );
 
 var marker = new mapboxgl.Marker({
@@ -107,6 +97,8 @@ var marker = new mapboxgl.Marker({
 })
     .setLngLat([-98.4916, 29.4252])
     .addTo(map);
+
+
 
 function onDragEnd() {
     var lngLat = marker.getLngLat();
@@ -130,87 +122,3 @@ function onDragEnd() {
 }
 
 marker.on('dragend', onDragEnd);
-
-
-// function onSearch() {
-//
-//     reverseGeocode({lng: -157.80600000000004, lat: 21.3137}, mapboxKey).then(function (results) {
-//         $.get(corsUrl + darkSkyUrl + darkSkyAPIKey + "/" + lat + "," + lng + "/", {
-//             daily: {
-//                 data: {
-//                     temperatureHigh: "",
-//                     temperatureLow: "",
-//                     cloudCover: "",
-//                     humidity: "",
-//                     windGust: "",
-//                     pressure: ""
-//                 }
-//             }
-//
-//         }).done(function(data) {
-//             console.log(data);
-//             $('.currentSA').html(postsHtml(data));
-//         });
-//     });
-//
-// }
-
-
-
-
-
-
-// var client = new MapboxClient(mapboxgl.accessToken);
-// console.log(client);
-//
-// var address = '';
-//
-// var test = client.geocodeForward(address, function(err, data, res) {
-//     // data is the geocoding result as parsed JSON
-//     // res is the http response, including: status, headers and entity properties
-//
-//     console.log(res);
-//     console.log(res.url);
-//     console.log(data);
-//
-//     var coordinates = data.features[0].center;
-//
-//     var map = new mapboxgl.Map({
-//         container: 'map',
-//         style: 'mapbox://styles/nadbot/cjv5l7j4a1k1l1fqof618dtg2',
-//         center: coordinates,
-//         zoom: 4
-//     });
-//
-//     new mapboxgl.Marker()
-//         .setLngLat(coordinates)
-//         .addTo(map);
-//
-//
-//
-//
-// });
-
-
-
-
-
-// $('#submit').click(function(data) {
-//     console.log(data);
-// });
-
-// $.get(corsUrl + darkSkyUrl + darkSkyAPIKey + "/" + lat + "," + lng + "/" + lang, {
-//     daily: {
-//         data: {
-//             temperatureHigh: "",
-//             temperatureLow: "",
-//             cloudCover: "",
-//             humidity: "",
-//             windGust: "",
-//             pressure: ""
-//         }
-//     }
-//
-// }).done(function(data) {
-//     console.log(data);
-// });

@@ -52,7 +52,36 @@ h3, h4, h5, h6 {
 
 
 @media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
+    /*.column-lg-6 {*/
+    /*    display: flex;*/
+    /*}*/
+
+    /*.column {*/
+    /*    !*position: absolute;*!*/
+    /*    width: 100%;*/
+    /*}*/
+
+    /*#map {*/
+    /*    !*left: 0;*!*/
+    /*    !*position: fixed;*!*/
+    /*    !*text-align: center;*!*/
+    /*    !*bottom: 0;*!*/
+    /*    width:100%;*/
+    /*    margin-top: auto;*/
+    /*    position: fixed;*/
+
+    /*}*/
+
+
+    /*{*/
+    /*    !*width: 90%;*!*/
+    /*    !*height: 40vh;*!*/
+    /*    !*margin: 0 auto;*!*/
+    /*    position:absolute;*/
+    /*    clear: left;*/
+    /*    !*margin: 5px;*!*/
+    /*    !*top:5px;*!*/
+    /*    bottom:0;*/
+    /*    width:100%;*/
+    /*}*/
 }
