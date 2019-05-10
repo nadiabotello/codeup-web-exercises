@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        body {
+            background-color: white;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</head>
+<body>
+<!--Add an input field and submit button (you will need to prevent the-->
+<!--Create a function that takes in a username and fetch's the color-->
+<!--preference based on the username and sets the background color to that color.-->
+
+<form>
+<label for="name">Username:</label>
+
+<input type="text" id="name" name="name" >
+
+<input type="submit" id="nameSubmit" value="Submit">
+
+</form>
+
+
+
+
+
+<script>
+
+
+    // function userBackground() {
+    //
+    //     $('#name').click(function (e) {
+    //         e.preventDefault();
+    //
+    //         let value = $(this).val();
+    //
+    //         if (value === 'sandy123') {
+    //             $('body').css('background-color', 'brown');
+    //         } else if (value === 'bob234') {
+    //             $('body').css('background-color', 'green');
+    //         } else if (value === 'sally345') {
+    //             $('body').css('background-color', 'blue');
+    //         }
+    //     });
+    // }
+
+    // fetch('data/profiles.json')
+    //     .then(response => console.log([0]))
+    //     .catch(error => console.error(error));
+
+    fetch('data/profiles.json')
+        .then(response => response.json())
+        .then((array) => {
+            const usernames = array.map(user => [0]);
+            usernames.forEach((user) => {
+
+            });
+        })
+            .catch(error => console.error(error));
+
+
+
+
+
+
+</script>
+
+<!--<script-->
+<!--        src="https://code.jquery.com/jquery-2.2.4.min.js"-->
+<!--        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="-->
+<!--        crossorigin="anonymous">-->
+<!--</script>-->
+
+</body>
+</html>
