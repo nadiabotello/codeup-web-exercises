@@ -12,16 +12,16 @@ $('img').css('height', '300px')
 // animateIt();
 
 
-$('h1').click(function() {
-   $(this).css('background', 'yellow');
+$('h1').click(function () {
+    $(this).css('background', 'yellow');
 });
 
-$('p').dblclick(function() {
+$('p').dblclick(function () {
     $(this).css('font-size', '18px')
 });
 
-$('li').hover(function() {
+$('li').hover(function () {
     $('li').css('color', 'red');
-}, function() {
+}, function () {
     $('li').css('color', 'black');
 });

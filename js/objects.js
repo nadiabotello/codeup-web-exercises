@@ -1,4 +1,4 @@
-(function() {
+(function () {
     "use strict";
 
     /**
@@ -14,13 +14,12 @@
 
     var person =
         {
-        firstName: "Nadia",
-        lastName: "Botello"
+            firstName: "Nadia",
+            lastName: "Botello"
         };
 
     console.log(person.firstName);
     console.log(person.lastName);
-
 
 
     /**
@@ -34,12 +33,11 @@
      */
 
 
-    person.hello = function() {
+    person.hello = function () {
         alert("Hello from " + person.firstName + " " + person.lastName);
     };
 
     person.hello();
-
 
 
     /** TODO:
@@ -67,8 +65,8 @@
     console.log(shoppers[2].name + "'s total before discount is " + shoppers[2].amount + ".");
 
 
-    shoppers.forEach(function(shoppers, i) {
-        for (i = 0; i < shoppers.length; i++);
+    shoppers.forEach(function (shoppers, i) {
+        for (i = 0; i < shoppers.length; i++) ;
 
         var total;
         var disc;
@@ -104,15 +102,13 @@
     //     return output;
     // }
 
-        // function displayShoppersInfo(shoppers) {
-        //     shoppers.forEach(function(shopper) {
-        //         console.log(displayShoppersInfo(shopper));
-        //     });
-        // }
-        //
-        // displayShoppersInfo(shoppers);
-
-
+    // function displayShoppersInfo(shoppers) {
+    //     shoppers.forEach(function(shopper) {
+    //         console.log(displayShoppersInfo(shopper));
+    //     });
+    // }
+    //
+    // displayShoppersInfo(shoppers);
 
 
     /** TODO:
@@ -131,48 +127,46 @@
     var books =
         [
             {
-            title: "Figuring",
-            author:{
-                firstName: "Maria",
-                lastName: "Popova"
+                title: "Figuring",
+                author: {
+                    firstName: "Maria",
+                    lastName: "Popova"
                 }
             },
             {
-            title: "Weapons of Math Destruction",
-            author:{
-                firstName: "Cathy",
-                lastName: "Oneil"
+                title: "Weapons of Math Destruction",
+                author: {
+                    firstName: "Cathy",
+                    lastName: "Oneil"
                 }
             },
             {
                 title: "The Age of Surveillance Capitalism",
-                author:{
+                author: {
                     firstName: "Shoshana",
                     lastName: "Zuboff"
                 }
             },
             {
                 title: "Broad Band: The Untold Story of the Women Who Made the Internet",
-                author:{
+                author: {
                     firstName: "Claire",
                     lastName: "Evans"
                 }
             },
             {
                 title: "Nicomachean Ethics",
-                author:{
+                author: {
                     firstName: "Aristotle",
                     lastName: " "
                 }
             }
 
-    ];
+        ];
 
     console.log(books[0].title);
     console.log(books[0].author.firstName);
     console.log(books[0].author.lastName);
-
-
 
 
     /**
@@ -201,7 +195,7 @@
      */
 
 
-    books.forEach(function(book, i) {
+    books.forEach(function (book, i) {
         console.log("Book " + i + " is " + book.title);
         console.log("The author's name is: " + book.author.firstName + " " + book.author.lastName);
         console.log(" ----------- ");
@@ -218,8 +212,6 @@
     // });
 
 
-
-
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
@@ -230,10 +222,6 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
-
-
-
-
 
 
 })();

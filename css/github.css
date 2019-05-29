@@ -1,72 +1,84 @@
-body{
-    margin:0px;
+body {
+    margin: 0px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-#WebsiteHeader{
-    padding:10px;
-    background-color:#24292e;
-    color:#eee;
+
+#WebsiteHeader {
+    padding: 10px;
+    background-color: #24292e;
+    color: #eee;
 }
-#WebsiteHeader nav{
-    display:inline-block;
+
+#WebsiteHeader nav {
+    display: inline-block;
 }
-#WebsiteHeader nav img{
+
+#WebsiteHeader nav img {
     vertical-align: middle;
-    margin-right:10px;
+    margin-right: 10px;
 }
-#WebsiteHeader nav a{
-    color:#aaa;
-    text-decoration:none;
+
+#WebsiteHeader nav a {
+    color: #aaa;
+    text-decoration: none;
     font-size: 14px;
-    margin-left:6px;
-    margin-right:6px;
+    margin-left: 6px;
+    margin-right: 6px;
     display: inline-block;
     vertical-align: middle;
 }
-#PHeaderContainer{
-    padding:4px 4px 0 4px;
+
+#PHeaderContainer {
+    padding: 4px 4px 0 4px;
 }
-#ProjectHeader{
-    padding-left:10px;
-    display:inline-block;
+
+#ProjectHeader {
+    padding-left: 10px;
+    display: inline-block;
     background-color: #fafbfc;
-    border-bottom:1px solid #999;
-    width:100%;
+    border-bottom: 1px solid #999;
+    width: 100%;
 }
-#ProjectHeader img,#ProjectHeader h3{
+
+#ProjectHeader img, #ProjectHeader h3 {
     display: inline-block;
     vertical-align: middle;
     font-weight: normal;
 }
-#ProjectNav nav{
-    height:30px;
+
+#ProjectNav nav {
+    height: 30px;
 }
-#ProjectNav nav a:hover{
-    background-color:#fff;
+
+#ProjectNav nav a:hover {
+    background-color: #fff;
 }
-#ProjectNav nav a{
-    text-decoration:none;
-    color:#666;
-    padding-left:15px;
-    padding-right:15px;
+
+#ProjectNav nav a {
+    text-decoration: none;
+    color: #666;
+    padding-left: 15px;
+    padding-right: 15px;
     display: inline-block;
     line-height: 30px;
-    height:28px;
-    margin:0px;
+    height: 28px;
+    margin: 0px;
 }
-#ActiveProjectNav{
-    color:#222 !important;
-    background-color:#fff;
+
+#ActiveProjectNav {
+    color: #222 !important;
+    background-color: #fff;
     border: solid #999;
-    border-radius:2px 4px 0 0;
+    border-radius: 2px 4px 0 0;
     border-width: 2px 1px 1px 1px;
-    border-bottom-color:#fff;
-    border-top-color:#ff5500;
+    border-bottom-color: #fff;
+    border-top-color: #ff5500;
 }
-hr{
-    background-color:#fff;
-    border-color:#fff;
-    color:#fff;
+
+hr {
+    background-color: #fff;
+    border-color: #fff;
+    color: #fff;
 }
 
 .badge {
@@ -76,83 +88,101 @@ hr{
     text-align: center;
     vertical-align: middle;
     border-radius: 50%;
-    background:rgba(27,31,35,.08);
+    background: rgba(27, 31, 35, .08);
 }
 
-#TableHeader th{
-    background-color:#fafbfc;
-    text-align:left;
-    padding:20px 0 20px 30px;
+#TableHeader th {
+    background-color: #fafbfc;
+    text-align: left;
+    padding: 20px 0 20px 30px;
 }
-.TeamMemberRow{
-    height:80px;
-    color:#444;
+
+.TeamMemberRow {
+    height: 80px;
+    color: #444;
 }
-.TeamCount{
-    width:80px;
+
+.TeamCount {
+    width: 80px;
 }
-.UserType{
-    width:100px;
+
+.UserType {
+    width: 100px;
 }
-.UserLogoColumn{
-    width:80px;
-    padding-right:10px;
+
+.UserLogoColumn {
+    width: 80px;
+    padding-right: 10px;
 }
-.UserLogoColumn img{
-    width:48px;
-    height:48px;
+
+.UserLogoColumn img {
+    width: 48px;
+    height: 48px;
 }
-.DisplayName{
-    text-decoration:none;
-    color:#6666ff;
+
+.DisplayName {
+    text-decoration: none;
+    color: #6666ff;
 }
-.UserName{
-    color:#444;
+
+.UserName {
+    color: #444;
 }
-#TeamTable{
-    width:100%;
+
+#TeamTable {
+    width: 100%;
     border-collapse: collapse;
 }
-#TeamTable tbody tr{
-    border:solid #aaa;
+
+#TeamTable tbody tr {
+    border: solid #aaa;
     border-width: 1px 0 1px 0;
 }
-#TeamTable tbody tr:last-child{
-    border:solid #aaa;
+
+#TeamTable tbody tr:last-child {
+    border: solid #aaa;
     border-width: 1px 0 0 0;
 }
+
 #TeamTable img {
-    float:right;
+    float: right;
 }
-#TeamTableContainer{
-    border:1px solid #aaa;
-    margin:14px;
+
+#TeamTableContainer {
+    border: 1px solid #aaa;
+    margin: 14px;
     border-radius: 3px;
     overflow: hidden;
 }
-#LeftFooterNav{
-    padding:10px;
-    position:relative;
-    float:left;
+
+#LeftFooterNav {
+    padding: 10px;
+    position: relative;
+    float: left;
 }
-#RightFooterNav{
-    padding:10px;
-    position:relative;
-    float:right;
+
+#RightFooterNav {
+    padding: 10px;
+    position: relative;
+    float: right;
     text-decoration: none;
 }
-footer{
-    position:absolute;
-    bottom:0;
-    width:100%;
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
-#FooterContainer{
-    padding:14px;
+
+#FooterContainer {
+    padding: 14px;
 }
-footer nav > *{
+
+footer nav > * {
     padding: 0 10px 0 0;
     text-decoration: none;
 }
+
 a:link {
     text-decoration: none;
 }

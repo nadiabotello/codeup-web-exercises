@@ -8,7 +8,6 @@ var lat = 29.4241;
 var lng = -98.4936;
 
 
-
 var lang = '?lang=eo';
 
 var seconds = 1556720525;
@@ -18,17 +17,17 @@ console.log(dateObject.toString());
 
 
 var icons = {
-    "clear-day" : "icon/SVG/Sun.svg",
-    "clear-night" : "icon/SVG/Moon-Full.svg",
-    "rain" : "icon/SVG/Cloud-Rain.svg",
-    "snow" : "icon/SVG/Cloud-Snow.svg",
-    "sleet" : "icon/SVG/Cloud-Hail.svg",
-    "wind" : "icon/SVG/Wind.svg",
-    "fog" : "icon/SVG/Cloud-Fog-Alt.svg",
-    "cloudy" : "icon/SVG/Cloud.svg",
-    "partly-cloudy-day" : "icon/SVG/Cloud-Sun.svg",
-    "partly-cloudy-night" : "icon/SVG/Cloud-Moon.svg"
-    };
+    "clear-day": "icon/SVG/Sun.svg",
+    "clear-night": "icon/SVG/Moon-Full.svg",
+    "rain": "icon/SVG/Cloud-Rain.svg",
+    "snow": "icon/SVG/Cloud-Snow.svg",
+    "sleet": "icon/SVG/Cloud-Hail.svg",
+    "wind": "icon/SVG/Wind.svg",
+    "fog": "icon/SVG/Cloud-Fog-Alt.svg",
+    "cloudy": "icon/SVG/Cloud.svg",
+    "partly-cloudy-day": "icon/SVG/Cloud-Sun.svg",
+    "partly-cloudy-night": "icon/SVG/Cloud-Moon.svg"
+};
 
 function postsHtml(posts) {
 
@@ -64,15 +63,13 @@ $.get(corsUrl + darkSkyUrl + darkSkyAPIKey + "/" + lat + "," + lng + "/" + lang,
         }
     }
 
-}).done(function(data) {
+}).done(function (data) {
     console.log(data);
     $('.currentSA').html(postsHtml(data));
 });
 
 
-
 mapboxgl.accessToken = mapboxKey;
-
 
 
 var map = new mapboxgl.Map({
@@ -83,9 +80,9 @@ var map = new mapboxgl.Map({
 });
 
 map.addControl(new MapboxGeocoder({
-    accessToken: mapboxgl.accessToken,
-    marker:false
-}).on('result',function(data){
+        accessToken: mapboxgl.accessToken,
+        marker: false
+    }).on('result', function (data) {
         marker.setLngLat(data.result.center);
         onDragEnd();
     })
@@ -97,7 +94,6 @@ var marker = new mapboxgl.Marker({
 })
     .setLngLat([-98.4916, 29.4252])
     .addTo(map);
-
 
 
 function onDragEnd() {
@@ -115,7 +111,7 @@ function onDragEnd() {
             }
         }
 
-    }).done(function(data) {
+    }).done(function (data) {
         console.log(data);
         $('.currentSA').html(postsHtml(data));
     });

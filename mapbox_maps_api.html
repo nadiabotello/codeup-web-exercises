@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Mapbox Maps API Exercise</title>
 
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet'/>
 
     <style>
         body {
@@ -34,8 +34,6 @@
 <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
 <script src="js/keys.js"></script>
 <script src="js/mapbox-geocoder-utils.js"></script>
-
-
 
 
 <!-- Custom JS -->
@@ -112,7 +110,7 @@
 
 
     function placeMarkerAndPopup(restaurant, token, map) {
-        return geocode(restaurant.address, token).then(function(coordinates) {
+        return geocode(restaurant.address, token).then(function (coordinates) {
             var popup = new mapboxgl.Popup()
                 .setHTML(restaurant.message);
             return marker = new mapboxgl.Marker()
@@ -121,16 +119,13 @@
                 .setPopup(popup);
         });
     }
-    for (var i = 0; i < favRestaurants.length; i ++) {
+
+    for (var i = 0; i < favRestaurants.length; i++) {
         placeMarkerAndPopup(favRestaurants[i], accessToken, map);
     }
 
 
-
-
 </script>
-
-
 
 
 </body>

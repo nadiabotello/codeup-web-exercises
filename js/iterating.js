@@ -1,4 +1,4 @@
-(function(){
+(function () {
     "use strict";
 
     /**
@@ -36,14 +36,15 @@
      */
 
     for (var i = 0; i < names.length; i++) {
-        console.log('The name at index ' + i + ' is: ' + names[i]);}
+        console.log('The name at index ' + i + ' is: ' + names[i]);
+    }
 
     /**
      * TODO:
      * Refactor your above code to use a `forEach` loop
      */
 
-    names.forEach(function(element, index, array){
+    names.forEach(function (element, index, array) {
         console.log(element + " is at index " + index);
     });
 
@@ -67,7 +68,7 @@
     //
     // first();
 
-    function first(arr){
+    function first(arr) {
         return arr[0];
     }
 
@@ -85,10 +86,11 @@
     //
     // third();
 
-    function last(arr){
+    function last(arr) {
         var lastIndex = arr.length - 1;
-            return arr[lastIndex];
-        }
-        console.log(last(names));
+        return arr[lastIndex];
+    }
+
+    console.log(last(names));
 
 })();

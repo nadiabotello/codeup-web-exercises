@@ -1,4 +1,4 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -46,14 +46,14 @@
     width: 33.33%;
 }
 
-.column.one-fourth{
+.column.one-fourth {
     width: 25%;
 }
 
-.column.one-sixth{
+.column.one-sixth {
     width: 16.67%;
 }
 
-.column.one-eighth{
+.column.one-eighth {
     width: 12.5%;
 }

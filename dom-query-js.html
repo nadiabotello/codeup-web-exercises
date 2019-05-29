@@ -25,17 +25,21 @@
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
 
-<button id="btn1">Set inner html to "Javascript is Cool"</button><br>
+<button id="btn1">Set inner html to "Javascript is Cool"</button>
 <br>
-<button id="btn2">Set the text color of subHeader to blue</button><br>
 <br>
-<button id="btn3">Set text colors on list</button><br>
+<button id="btn2">Set the text color of subHeader to blue</button>
 <br>
-<button id="btn4">Set text in sub-par to "Mission Accomplished!"</button><br>
+<br>
+<button id="btn3">Set text colors on list</button>
+<br>
+<br>
+<button id="btn4">Set text in sub-par to "Mission Accomplished!"</button>
+<br>
 <br>
 
 <script>
-    (function() {
+    (function () {
         "use strict";
         // TODO: Uncomment next line and get the main header element by id
         var mainHeader = document.getElementById('main-header');
@@ -68,11 +72,11 @@
         // TODO: Set text color of li with dbid = 1 to blue
 
         var changeColors = function (event) {
-            for(var i = 0; listItems.length > i; i++){
+            for (var i = 0; listItems.length > i; i++) {
                 var dbid = listItems[i].getAttribute('data-dbid');
-                if(dbid == 1){
+                if (dbid == 1) {
                     listItems[i].style.color = "blue";
-                }else if(dbid % 2 === 0){
+                } else if (dbid % 2 === 0) {
                     listItems[i].style.color = "grey";
                 }
             }
@@ -98,8 +102,6 @@
         // listItems[0].style.color = "blue";
 
 
-
-
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
         var subParagraphs = document.getElementsByClassName('sub-paragraph');
 
@@ -111,9 +113,6 @@
         };
 
         document.getElementById('btn4').addEventListener('click', changeSubParagraphs, false);
-
-
-
 
 
     })();

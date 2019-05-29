@@ -1,33 +1,33 @@
 /*.invisible{*/
-    /*visibility: hidden;*/
+/*visibility: hidden;*/
 /*}*/
 
 /*.visible{*/
-    /*visibility: visible;*/
+/*visibility: visible;*/
 /*}*/
 
-.highlighted{
+.highlighted {
     background-color: yellow;
 }
 
-h1{
+h1 {
     text-align: center;
 }
 
-#national-parks-1, #national-parks-2, #national-parks-3{
+#national-parks-1, #national-parks-2, #national-parks-3 {
     display: none;
 }
 
-h2{
+h2 {
     text-align: center;
     color: red;
 }
 
-#register{
+#register {
     display: none;
 }
 
-#x{
+#x {
     color: red;
 }
 

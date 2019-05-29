@@ -1,42 +1,45 @@
 [
-    {
-        "title": "My First Blog Post",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "categories": [
-            "greek"
-        ],
-        "date": "January 25, 2015"
-    }, {
-        "title": "The Second Post",
-        "content": "Cupcake ipsum dolor sit amet gummies. Cake chocolate sweet ice cream oat cake biscuit bear claw dessert. Jujubes marzipan toffee apple pie pastry dragée jujubes marshmallow. Dragée chocolate gingerbread liquorice chocolate bar jujubes. Sweet chocolate bar jelly-o chocolate cake candy carrot cake cotton candy macaroon marzipan. Sweet roll biscuit sweet gummies topping sesame snaps tootsie roll sugar plum pie. Sweet muffin croissant chocolate cake chupa chups. Donut croissant gummies donut powder ice cream. Chupa chups halvah apple pie topping jelly beans donut candy canes donut. Bonbon cake gummi bears cheesecake tart topping powder liquorice gummi bears.",
-        "categories": [
-            "family",
-            "candy",
-            "sweets",
-            "sugar"
-        ],
-        "date": "February 14, 2015"
-    }, {
-        "title": "Third Post",
-        "content": "Get video posted to internet for chasing red dot relentlessly pursues moth for stand in doorway, unwilling to chose whether to stay in or go out. Eat from dog's food. Poop in litter box, scratch the walls. Cough furball purrrrrr white cat sleeps on a black shirt yet lick left leg for ninety minutes, still dirty. Sleep nap while happily ignoring when being called side-eyes your \"jerk\" other hand while being petted or lick plastic bags sleep lick the other cats or spend all night ensuring people don't sleep sleep all day. Have my breakfast spaghetti yarn lick butt and make a weird face so my cat stared at me he was sipping his tea, too loved it, hated it, loved it, hated it meow all night cats making all the muffins yet climb leg. Loves cheeseburgers chew foot, and sleep everywhere, but not in my bed. Immediately regret falling into bathtub stare out cat door then go back inside lounge in doorway. Purr when being pet warm up laptop with butt lick butt fart rainbows until owner yells pee in litter box hiss at cats. Lick master's hand at first then bite because im moody put toy mouse in food bowl run out of litter box at full speed , but hiiiiiiiiii feed me now bite the neighbor's bratty kid. Rub against owner because nose is wet stuff and things yet peer out window, chatter at birds, lure them to mouth. Lick human with sandpaper tongue. ",
-        "categories": [
-            "cat",
-            "meow",
-            "yowl",
-            "no"
-        ],
-        "date": "June 6, 1966",
-        "image": "img/gato.jpg"
-    }, {
-        "title": "Fourth Post by guest author Doggo",
-        "content": "Doggo ipsum yapper borking doggo I am bekom fat he made many woofs, puggo yapper. you are doin me a concern. Maximum borkdrive puggorino borking doggo doggo doing me a frighten wow such tempt noodle horse very jealous pupper, most angery pupper I have ever seen pupperino puggo mlem very good spot much ruin diet. Long water shoob pupperino ur givin me a spook you are doing me a frighten sub woofer h*ck, borking doggo you are doing me the shock ruff. Very jealous pupper sub woofer big ol pupper many pats smol borking doggo with a long snoot for pats big ol pupper long woofer, puggo doing me a frighten aqua doggo the neighborhood pupper. H*ck aqua doggo most angery pupper I have ever seen shoob yapper, the neighborhood pupper smol pupper shoob smol, very good spot doing me a frighten most angery pupper I have ever seen. Boofers you are doing me the shock smol borking doggo with a long snoot for pats, mlem. Wow very biscit doggorino stop it fren super chub, borkdrive fat boi smol puggorino, wrinkler maximum borkdrive. Length boy heckin good boys and girls vvv the neighborhood pupper, such treat long water shoob, very hand that feed shibe floofs. Most angery pupper I have ever seen pupper fat boi tungg very taste wow, vvv shibe corgo.",
-        "categories": [
-            "doggo",
-            "woof",
-            "treat",
-            "yes"
-        ],
-        "date": "Yes",
-        "image": "img/doggo.jpeg"
-}
+  {
+    "title": "My First Blog Post",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "categories": [
+      "greek"
+    ],
+    "date": "January 25, 2015"
+  },
+  {
+    "title": "The Second Post",
+    "content": "Cupcake ipsum dolor sit amet gummies. Cake chocolate sweet ice cream oat cake biscuit bear claw dessert. Jujubes marzipan toffee apple pie pastry dragée jujubes marshmallow. Dragée chocolate gingerbread liquorice chocolate bar jujubes. Sweet chocolate bar jelly-o chocolate cake candy carrot cake cotton candy macaroon marzipan. Sweet roll biscuit sweet gummies topping sesame snaps tootsie roll sugar plum pie. Sweet muffin croissant chocolate cake chupa chups. Donut croissant gummies donut powder ice cream. Chupa chups halvah apple pie topping jelly beans donut candy canes donut. Bonbon cake gummi bears cheesecake tart topping powder liquorice gummi bears.",
+    "categories": [
+      "family",
+      "candy",
+      "sweets",
+      "sugar"
+    ],
+    "date": "February 14, 2015"
+  },
+  {
+    "title": "Third Post",
+    "content": "Get video posted to internet for chasing red dot relentlessly pursues moth for stand in doorway, unwilling to chose whether to stay in or go out. Eat from dog's food. Poop in litter box, scratch the walls. Cough furball purrrrrr white cat sleeps on a black shirt yet lick left leg for ninety minutes, still dirty. Sleep nap while happily ignoring when being called side-eyes your \"jerk\" other hand while being petted or lick plastic bags sleep lick the other cats or spend all night ensuring people don't sleep sleep all day. Have my breakfast spaghetti yarn lick butt and make a weird face so my cat stared at me he was sipping his tea, too loved it, hated it, loved it, hated it meow all night cats making all the muffins yet climb leg. Loves cheeseburgers chew foot, and sleep everywhere, but not in my bed. Immediately regret falling into bathtub stare out cat door then go back inside lounge in doorway. Purr when being pet warm up laptop with butt lick butt fart rainbows until owner yells pee in litter box hiss at cats. Lick master's hand at first then bite because im moody put toy mouse in food bowl run out of litter box at full speed , but hiiiiiiiiii feed me now bite the neighbor's bratty kid. Rub against owner because nose is wet stuff and things yet peer out window, chatter at birds, lure them to mouth. Lick human with sandpaper tongue. ",
+    "categories": [
+      "cat",
+      "meow",
+      "yowl",
+      "no"
+    ],
+    "date": "June 6, 1966",
+    "image": "img/gato.jpg"
+  },
+  {
+    "title": "Fourth Post by guest author Doggo",
+    "content": "Doggo ipsum yapper borking doggo I am bekom fat he made many woofs, puggo yapper. you are doin me a concern. Maximum borkdrive puggorino borking doggo doggo doing me a frighten wow such tempt noodle horse very jealous pupper, most angery pupper I have ever seen pupperino puggo mlem very good spot much ruin diet. Long water shoob pupperino ur givin me a spook you are doing me a frighten sub woofer h*ck, borking doggo you are doing me the shock ruff. Very jealous pupper sub woofer big ol pupper many pats smol borking doggo with a long snoot for pats big ol pupper long woofer, puggo doing me a frighten aqua doggo the neighborhood pupper. H*ck aqua doggo most angery pupper I have ever seen shoob yapper, the neighborhood pupper smol pupper shoob smol, very good spot doing me a frighten most angery pupper I have ever seen. Boofers you are doing me the shock smol borking doggo with a long snoot for pats, mlem. Wow very biscit doggorino stop it fren super chub, borkdrive fat boi smol puggorino, wrinkler maximum borkdrive. Length boy heckin good boys and girls vvv the neighborhood pupper, such treat long water shoob, very hand that feed shibe floofs. Most angery pupper I have ever seen pupper fat boi tungg very taste wow, vvv shibe corgo.",
+    "categories": [
+      "doggo",
+      "woof",
+      "treat",
+      "yes"
+    ],
+    "date": "Yes",
+    "image": "img/doggo.jpeg"
+  }
 ]

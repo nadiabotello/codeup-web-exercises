@@ -49,12 +49,12 @@ function returnRandomNum(min, max) {
 
 function isEvenOdd(num) {
     var outputMessage = num;
-    outputMessage += (num %2 === 0) ? " is even" : " is odd";
+    outputMessage += (num % 2 === 0) ? " is even" : " is odd";
     console.log(outputMessage);
 }
 
 function evenOddCalculator() {
-    for (var i = 1; i <= 10; i += 1){
+    for (var i = 1; i <= 10; i += 1) {
         var randNum = returnRandomNum(20, 200);
         var result = isEvenOdd(randNum);
     }
@@ -79,34 +79,29 @@ function evenOddCalculator() {
 
 // walk-through example
 
-for (var i = 1; i < 10; i += 1){
+for (var i = 1; i < 10; i += 1) {
     console.log(String(i).repeat(i));
 }
 
 // nested for loop
 
-for (var i = 1; i < 10; i += 1){
+for (var i = 1; i < 10; i += 1) {
     var output = "";
-    for (var j = 1; j <= i; j += 1){
+    for (var j = 1; j <= i; j += 1) {
         output += "i";
     }
     console.log(output);
 }
 
 
-
-
-for (var x = 100; x >= 5; x -= 5){
+for (var x = 100; x >= 5; x -= 5) {
     console.log(x);
 }
 
 
-
-
-
-for(var i = 1; i < 101; i++){
-    if(i % 15 === 0) console.log("FizzBuzz");
-    else if(i % 5 === 0) console.log("Buzz");
-    else if(i % 3 === 0) console.log("Fizz");
+for (var i = 1; i < 101; i++) {
+    if (i % 15 === 0) console.log("FizzBuzz");
+    else if (i % 5 === 0) console.log("Buzz");
+    else if (i % 3 === 0) console.log("Fizz");
     else console.log(i);
 }

@@ -2,7 +2,7 @@
 
 var i = 2;
 
-while (i <= 65536){
+while (i <= 65536) {
     console.log(i);
     i *= 2;
 }
@@ -31,9 +31,7 @@ var randomNum = Math.floor(Math.random() * 5) + 1;
 do {
     if (allCones -= randomNum) {
         console.log(randomNum + " cones sold...");
-    }
-
-    else if (allCones - randomNum < 0) {
+    } else if (allCones - randomNum < 0) {
         console.log("Cannot sell you " + randomNum + " cones because I have " + allCones);
     }
 

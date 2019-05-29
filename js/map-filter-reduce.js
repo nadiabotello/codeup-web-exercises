@@ -81,7 +81,6 @@ console.log(userEmails);
 // console.log(userEmails);
 
 
-
 // 4. Use reduce to get the total years of experience from the list of users. Once you get the total of
 // years you can use the result to calculate the average.
 
@@ -100,7 +99,6 @@ console.log(userEmails);
 // };
 //
 // console.log(getAverageYears(users));
-
 
 
 //   5.  Use reduce to get the longest email from the list of users.
@@ -138,8 +136,6 @@ console.log(userEmails);
 //
 // console.log(longestWord(testSentence1));
 // console.log(longestWord(testSentence2));
-
-
 
 
 // const longestWord = sentence => {

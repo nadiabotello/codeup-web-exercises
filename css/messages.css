@@ -8,13 +8,13 @@ body, html {
 
 
 :root {
-  --bg-info: lightblue;
-  --text-info: #6666ff;
-  --bg-success: lightgreen;
-  --text-success: green;
+    --bg-info: lightblue;
+    --text-info: #6666ff;
+    --bg-success: lightgreen;
+    --text-success: green;
 }
 
-.message{
+.message {
     border: 1px solid lightgrey;
     padding: 10px;
     margin: 10px;
@@ -22,26 +22,26 @@ body, html {
     font-size: 14px;
 }
 
-.message-info{
+.message-info {
     /*background-color: lightblue;*/
     /*color: #6666ff;*/
     background-color: var(--bg-info);
     color: var(--text-info);
 }
 
-.message-success{
+.message-success {
     /*background-color: lightgreen;*/
     /*color: green;*/
     background-color: var(--bg-success);
     color: var(--text-success);
 }
 
-.message-warning{
+.message-warning {
     background-color: yellow;
     color: orange;
 }
 
-.message-error{
+.message-error {
     background-color: lightpink;
     color: darkred;
 }

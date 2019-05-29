@@ -4,7 +4,7 @@
 //     and returns a promise that resolves after the passed number of milliseconds.
 //
 
-function wait (n) {
+function wait(n) {
     return new Promise((resolve, reject) => {
         if (n === 1000) {
             resolve('You\'ll see this after 1 second');
@@ -33,7 +33,7 @@ function getGithubUsername() {
 }
 
 getGithubUsername().then((username) => {
-        console.log('Users last commit was: ' + username[0].created_at);
-    })
-.catch(error => console.error(error));
+    console.log('Users last commit was: ' + username[0].created_at);
+})
+    .catch(error => console.error(error));
 

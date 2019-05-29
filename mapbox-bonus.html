@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Mapbox API exercise</title>
 
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet'/>
 
     <style>
         body {
@@ -40,8 +40,6 @@
 <script src="js/mapbox-geocoder-utils.js"></script>
 
 
-
-
 <!-- Custom JS -->
 <script>
 
@@ -62,7 +60,7 @@
     };
 
     function placeMarkerAndPopup(info, token, map) {
-        geocode(info.address, token).then(function(coordinates) {
+        geocode(info.address, token).then(function (coordinates) {
             var popup = new mapboxgl.Popup()
                 .setHTML(info.popupHTML);
             var marker = new mapboxgl.Marker()

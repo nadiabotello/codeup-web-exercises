@@ -3,7 +3,7 @@
 
 // 1.
 
-console.log ("Hello from external JavaScript");
+console.log("Hello from external JavaScript");
 
 // 2.
 
@@ -18,59 +18,58 @@ alert("Great, " + userInput + " is my favorite color, too!");
 
 // word problems with numerical user input from prior lesson exercises
 
-var littlemermaid = prompt ("How many days have you rented Little Mermaid?");
+var littlemermaid = prompt("How many days have you rented Little Mermaid?");
 Number("littlemermaid");
-console.log (littlemermaid);
+console.log(littlemermaid);
 
-var brotherbear = prompt ("How many days have you rented Brother Bear?");
+var brotherbear = prompt("How many days have you rented Brother Bear?");
 Number("brotherbear");
-console.log (brotherbear);
+console.log(brotherbear);
 
-var hercules = prompt ("How many days have you rented Hercules?");
+var hercules = prompt("How many days have you rented Hercules?");
 Number("hercules");
-console.log (hercules);
+console.log(hercules);
 
-var dailyprice = prompt ("What is the daily price of each rental?");
+var dailyprice = prompt("What is the daily price of each rental?");
 Number("dailyprice");
-console.log (dailyprice);
+console.log(dailyprice);
 
 var totalrentalprice = (littlemermaid * dailyprice) + (brotherbear * dailyprice) + (hercules * dailyprice);
-console.log (totalrentalprice);
+console.log(totalrentalprice);
 
 alert("You owe $" + totalrentalprice + " for your rentals.");
 
 
-
 // word problem #2
 
-var google = prompt ("What is your Google daily rate?");
+var google = prompt("What is your Google daily rate?");
 Number("google");
-console.log (google);
+console.log(google);
 
-var amazon = prompt ("What is your Amazon daily rate?");
+var amazon = prompt("What is your Amazon daily rate?");
 Number("amazon");
-console.log (amazon);
+console.log(amazon);
 
-var facebook = prompt ("What is your Facebook daily rate?");
+var facebook = prompt("What is your Facebook daily rate?");
 Number("facebook");
-console.log (facebook);
+console.log(facebook);
 
-var weeklygoogle = prompt ("How many hours did you work for Google this week?");
+var weeklygoogle = prompt("How many hours did you work for Google this week?");
 Number("weeklygoogle");
-console.log (weeklygoogle);
+console.log(weeklygoogle);
 
-var weeklyamazon = prompt ("How many hours did you work for Amazon this week?");
+var weeklyamazon = prompt("How many hours did you work for Amazon this week?");
 Number("weeklyamazon");
-console.log (weeklyamazon);
+console.log(weeklyamazon);
 
-var weeklyfacebook = prompt ("How many hours did you work for Facebook this week?");
+var weeklyfacebook = prompt("How many hours did you work for Facebook this week?");
 Number("weeklyfacebook");
-console.log (weeklyfacebook);
+console.log(weeklyfacebook);
 
 var totalweek = (google * weeklygoogle) + (amazon * weeklyamazon) + (facebook * weeklyfacebook);
-console.log (totalweek);
+console.log(totalweek);
 
-alert("You made $" +totalweek + " this week.");
+alert("You made $" + totalweek + " this week.");
 
 
 

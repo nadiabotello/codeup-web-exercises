@@ -21,7 +21,8 @@
 
 var enter = confirm("Would you like to enter a number?");
 
-if (enter === true){}
+if (enter === true) {
+}
 
 var number = prompt("Please enter your number.");
 
@@ -56,65 +57,62 @@ function positiveNegative(number) {
 alert(number + " is " + positiveNegative(number));
 
 
+confirm("Would you like to enter a number?");
+console.log(confirm);
+var num = Number(prompt("Please enter your number."));
 
-        confirm("Would you like to enter a number?");
-        console.log(confirm);
-        var num = Number(prompt("Please enter your number."));
+//     // if (open) {
+//     //     var num = Number(prompt("Please enter your number."));
+//     //     console.log(num);
+//     // }
+//     //
+//     if (num % 2 == 0) {
+//         alert("Your number is even.");
+//         console.log(odd);
+//     } else {
+//         alert("Your number is odd".);
+//     }
+//     //
+//     if (odd) {
+//         var hundredPlus = 100 + +num;
+//         alert("Your number + 100 equals to " + hundredPlus);
+//         console.log(hundredPlus);
+//     }
+//     //
+//     if (hundredPlus) {
+//         var positive = true;
+//         alert("Your number is " + positive);
+//         console.log(positive);
+//     }
+// }
+//
+// else {
+//     alert("You did not enter a number.");
+//     console.log();
+// }
 
-    //     // if (open) {
-    //     //     var num = Number(prompt("Please enter your number."));
-    //     //     console.log(num);
-    //     // }
-    //     //
-    //     if (num % 2 == 0) {
-    //         alert("Your number is even.");
-    //         console.log(odd);
-    //     } else {
-    //         alert("Your number is odd".);
-    //     }
-    //     //
-    //     if (odd) {
-    //         var hundredPlus = 100 + +num;
-    //         alert("Your number + 100 equals to " + hundredPlus);
-    //         console.log(hundredPlus);
-    //     }
-    //     //
-    //     if (hundredPlus) {
-    //         var positive = true;
-    //         alert("Your number is " + positive);
-    //         console.log(positive);
-    //     }
-    // }
-    //
-    // else {
-    //     alert("You did not enter a number.");
-    //     console.log();
-    // }
-
-        // if (open) {
-        //     var num = Number(prompt("Please enter your number."));
-        //     console.log(num);
-        //     }
-        //     //
-        // if (num) {
-        //     var odd = true;
-        //     alert("Your number is " + odd);
-        //     console.log(odd);
-        //     }
-        //     //
-        // if (odd) {
-        //     var hundredPlus = 100 + +num;
-        //     alert("Your number + 100 equals to " + hundredPlus);
-        //     console.log(hundredPlus);
-        //     }
-        //     //
-        // if (hundredPlus) {
-        //     var positive = true;
-        //     alert("Your number is " + positive);
-        //     console.log(positive);
-        //     }
-
-
+// if (open) {
+//     var num = Number(prompt("Please enter your number."));
+//     console.log(num);
+//     }
+//     //
+// if (num) {
+//     var odd = true;
+//     alert("Your number is " + odd);
+//     console.log(odd);
+//     }
+//     //
+// if (odd) {
+//     var hundredPlus = 100 + +num;
+//     alert("Your number + 100 equals to " + hundredPlus);
+//     console.log(hundredPlus);
+//     }
+//     //
+// if (hundredPlus) {
+//     var positive = true;
+//     alert("Your number is " + positive);
+//     console.log(positive);
+//     }
 
 
 /**
@@ -151,7 +149,6 @@ function analyzeColor(color) {
 console.log(analyzeColor);
 
 
-
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
@@ -167,7 +164,8 @@ var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 var randomColor = colors[Math.floor(Math.random() * colors.length)];
 
 function analyzeColor(randomColor) {
-    console.log(randomColor);}
+    console.log(randomColor);
+}
 
 
 /**
@@ -246,8 +244,8 @@ function calculateTotal(lucky, total) {
             return null;
     }
 }
-console.log(calculateTotal());
 
+console.log(calculateTotal());
 
 
 /**

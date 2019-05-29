@@ -18,13 +18,13 @@
 var beverages = [
 
     {
-     brandName: "Dr. Pepper",
-     type: "Soda",
-     volumeInLiters: "2",
-     priceInCents: "1.67",
-     expirationDate: "4/20/20",
-     dateTimesOfLastSips: "4/12/19 3:09pm",
-     isOpen: "Yes"
+        brandName: "Dr. Pepper",
+        type: "Soda",
+        volumeInLiters: "2",
+        priceInCents: "1.67",
+        expirationDate: "4/20/20",
+        dateTimesOfLastSips: "4/12/19 3:09pm",
+        isOpen: "Yes"
     },
     {
         brandName: "Bill Millers",
@@ -51,8 +51,6 @@ var beverages = [
 
 beverages.brandName = "La Croix";
 beverages.type = "Flavored carbonated water";
-
-
 
 
 // Define your objects using both literal syntax to create all properties and values at once and also try
@@ -91,7 +89,7 @@ console.log(users.name);
 // console.log(users[0].age + " " + users[1].age + ' ' + users[2].age);
 
 
-users.forEach(function(user) {
+users.forEach(function (user) {
     var output = 0;
     output += (user.age + 1);
     console.log(output);
@@ -127,34 +125,32 @@ var dogs = [
         age: 5,
         color: "black and tan",
         sterilized: false,
-        shotRecords:{
+        shotRecords: {
             date: "1/2015",
             typeOfShot: "rabies"
         }
     }
 ];
 
-dogs.bark = function() {
+dogs.bark = function () {
     console.log("Woof!");
 };
 
 dogs.bark();
 
-dogs.forEach(function(dog) {
+dogs.forEach(function (dog) {
     var output = 0;
     output += (dog.age + 1);
     console.log(output);
 });
 
-dogs.fix = function(dog) {
+dogs.fix = function (dog) {
     if (dog.sterilized === false) {
         return console.log(true);
     }
 };
 
 dogs.fix();
-
-
 
 
 // BONUS 1 (expanding on the books object exercise):

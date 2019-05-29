@@ -29,29 +29,29 @@ body {
     height: 650px;
 }
 
-#footer{
+#footer {
     position: absolute;
     top: 96%;
     left: 15px;
 }
 
-#soon{
+#soon {
     font-size: 3em;
     letter-spacing: 1px;
     padding-bottom: 10px;
     text-align: center;
 }
 
-#days{
+#days {
     text-align: center;
     padding-top: 10px;
 }
 
-hr{
+hr {
     width: 12%;
     height: 1px;
 }
 
-a{
+a {
     color: white;
 }
